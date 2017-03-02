@@ -1,0 +1,96 @@
+// Descriptive color variables
+
+$white            : #fafafa;
+$black            : #333333;
+$grey             : #f2f2f2;
+
+// Descriptive Skills color Vars
+
+$pickled-bluewood   : #313e5c;
+$bay-of-many        : #214175;
+$outer-space        : #2c353e;
+$curious-blue       : #288ada;
+$shamrock           : #33cf89;
+$keppel             : #48aea5;
+$paris-daisy        : #fefe77;
+$yellow-orange      : #ffad49;
+$burnt-sienna       : #ec6f60;
+
+// Functional color variables
+
+$text-white         : $white;
+$text-dark          : $black;
+$text-grey          : $grey;
+
+//  Section Colors
+
+//////////////////////////////
+//  #main-header
+//////////////////////////////
+
+//  header text
+$text-nav                 : $outer-space;
+$text-nav-hover           : $paris-daisy;
+$text-nav-selected		  : $paris-daisy;
+$text-nav-bg-selected	  : $outer-space;
+$text-main-heading        : $outer-space;
+$text-sub-heading         : $paris-daisy;
+
+//  header background
+$bg-main-header           : linear-gradient(rgba(52,232,158,.75) ,rgba(15, 52, 67, .75));
+
+
+//////////////////////////////
+// About Me Section
+//////////////////////////////
+
+// About Text
+$text-about-primary       : $white;
+$text-about-heading       : $shamrock;
+$text-about-subheading    : $paris-daisy;
+
+
+
+//////////////////////////////
+//  Font Size - Styles
+//////////////////////////////
+
+// Font Stacks
+
+$stack-sans-serif              : Helvetica, Arial, sans-serif;
+$stack-ubunto-sans             : 'Ubuntu', $stack-sans-serif;
+$stack-lobster-cursive        : 'Lobster', cursive;
+
+// Font Size
+
+$font-base            : normal 16px/1.5 $stack-ubunto-sans;
+
+$font-body-copy       : 1.125rem; /* 18px */
+$font-size-xsml       : .75rem; /* 12px */
+$font-size-sml        : 1.25rem; /* 20px */
+$font-size-md         : 1.375rem; /* 20px */
+// Title Size
+$font-title-md        : 2.5rem;
+$font-title-lg        : 3rem;
+
+// Border radius
+
+$br-round: 50%;
+
+// Center El's
+
+$margin-center      :  0 auto;
+
+// Asset paths
+
+$path-img  : '../img';
+
+// Media Query
+
+// ,(min-width: 600px) and (orientation: landscape)'
+
+// Fixes layout issue with project pic layout
+$brk-2col-layout : '(min-width: 460px) and (max-width:1023px)';
+
+$brk-tablet :  '(min-width: 460px),(min-width: 600px) and (orientation: landscape)';
+$brk-wide   :  '(min-width: 1024px)';

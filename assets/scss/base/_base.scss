@@ -1,0 +1,31 @@
+/****************************************
+BASE STYLES
+/***************************************/
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+  font: $font-base;
+  background: $outer-space;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,0 +1,87 @@
+/* Toggle Drop-down menu button */
+#main-nav {
+  @include grid-column;
+  position: relative;
+  margin: 0;
+  width: 100%;
+
+  .main-logo {
+    background: url('../images/icons/logo.svg') no-repeat center;
+    color: $white;
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -68px;
+    left: -124px;
+  }
+
+  .nav-links {
+    // display: none;
+    background: rgba($outer-space, .85);
+
+    @include tablet {
+     display: initial;
+     background: none;
+     display: flex;
+     justify-content: flex-end;
+    }
+
+    li.selected {
+      @include tablet {
+        background: $text-nav-bg-selected;
+        & > a {
+          color: $text-nav-selected;
+        }
+      }
+    }
+
+   li {
+     margin-bottom: 4px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: all .6s ease-out;
+
+     @include tablet {
+      margin-bottom: 0;
+      margin-right: .25rem;
+      margin-left: .25rem;
+      padding: .625rem .5rem;
+
+      &:hover {
+        background: $text-nav-bg-selected;
+
+        > a {
+          color: $text-nav-selected;
+        }
+
+      }
+     }
+
+     a {
+       color: $text-white;
+       font-size: $font-size-xsml;
+       padding: 8px 10px;
+
+       @include tablet {
+        color: $text-nav;
+        padding: 0;
+       }
+     }
+   }
+  }
+
+  #nav-icon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
