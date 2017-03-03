@@ -9,6 +9,7 @@ BASE STYLES
 body {
   font: $font-base;
   background: $outer-space;
+   @include grid-visual;
 }
 
 a {

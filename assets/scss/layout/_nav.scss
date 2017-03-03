@@ -15,10 +15,15 @@
     position: absolute;
     top: -68px;
     left: -124px;
+
+    @include tablet {
+      // left: -144px;
+    }
   }
 
   .nav-links {
-    // display: none;
+    display: none;
+    @include grid-column;
     background: rgba($outer-space, .85);
 
     @include tablet {
@@ -26,6 +31,7 @@
      background: none;
      display: flex;
      justify-content: flex-end;
+     margin-right: -12px;
     }
 
     li.selected {

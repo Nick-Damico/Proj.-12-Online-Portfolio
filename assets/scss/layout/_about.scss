@@ -1,0 +1,106 @@
+
+
+#about-me {
+	@include grid-container;
+	background: $about-bg-color;
+	color: $about-text-color;
+	text-align: center;
+	position: relative;
+	padding-bottom: 3rem;
+
+	.section-title  {
+		@include grid-column;
+		color: $text-about-heading;
+		font-family: $text-style-about;
+		font-size: $heading-size;
+		margin-top: 0px;
+		margin-bottom: 15px;
+	}
+
+	.section-intro {
+		font-size: $font-body-copy;
+		font-weight: 300;
+		margin-bottom: 28px;
+
+		@include tablet {
+			@include grid-column(8);
+			@include grid-push(2);
+			
+		}
+	}
+
+	.about-icon {
+		width: 80px;
+		height: 80px;
+		margin-top: -40px;
+
+		@include tablet {
+			width: 100px;
+			height: 100px;
+			margin-top: -50px;
+		}
+	}
+
+
+}
+
+.about-block-container {
+
+	@include tablet {
+		@include grid-column(8);
+		@include grid-push(2);
+	}
+
+	.block-sections {
+		@include grid-column(12);
+		@include grid-push;
+		border: 1px solid $about-border-color;
+		margin-bottom: 20px;
+		padding: 20px;
+		
+		@include sml-device {
+			@include grid-column(10);
+			@include grid-push(1);
+	}
+
+		
+
+		.about-title {
+			color: $text-about-heading;
+			border-radius: $about-border;
+			border: 1px solid $about-border-color;
+			font-size: $subheading-size;
+			font-weight: 300;
+			padding: 5px 0;
+			border-radius: 10px;
+		}
+
+		> p {
+			font-size: $font-size-xsml;
+			text-align: left;
+		}
+	}
+}
+
+.techdegree-section {
+	@include grid-column;
+	text-align: center;
+	background: lighten($about-bg-color, 5%);
+
+	.techdegree-title {
+		color: $text-about-heading;
+		font-size: $subheading-size;
+		font-weight: 300;
+
+		> span {
+			color: $text-about-subheading;
+			font-weight: 400;
+		}
+	}
+
+	p {
+		font-size: $font-body-copy;
+		font-weight: 300;
+	}
+}
+

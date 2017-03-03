@@ -13,6 +13,12 @@
   }
 }
 
+@mixin sml-device {
+  @media #{$brk-sml-device} {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media #{$brk-tablet} {
     @content;
