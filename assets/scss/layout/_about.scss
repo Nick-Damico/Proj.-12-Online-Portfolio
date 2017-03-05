@@ -4,79 +4,89 @@
 	@include grid-container;
 	background: $about-bg-color;
 	color: $about-text-color;
-	text-align: center;
 	position: relative;
 	padding-bottom: 3rem;
+	text-align: center;
+	transition: width .8s ease-out;
 
 	.section-title  {
 		@include grid-column;
 		color: $text-about-heading;
 		font-family: $text-style-about;
-		font-size: $heading-size;
+		font-size: $about-header;
+		font-weight: 400;
 		margin-top: 0px;
 		margin-bottom: 15px;
 	}
 
 	.section-intro {
-		font-size: $font-body-copy;
+		font-size: $about-paragraph-sm;
 		font-weight: 300;
-		margin-bottom: 28px;
+		margin-bottom: 60px;
 
-		@include tablet {
+		@include tablet {			
 			@include grid-column(8);
-			@include grid-push(2);
-			
+			@include grid-push(2);			
+		}
+
+		@include lg-devices {
+			font-size: $about-paragraph;
+			@include grid-column(6);
+			@include grid-push(3);
 		}
 	}
-
-	.about-icon {
-		width: 80px;
-		height: 80px;
-		margin-top: -40px;
-
-		@include tablet {
-			width: 100px;
-			height: 100px;
-			margin-top: -50px;
-		}
-	}
-
 
 }
 
 .about-block-container {
 
 	@include tablet {
-		@include grid-column(8);
-		@include grid-push(2);
+
+
+		// @include grid-column(10);
+		// @include grid-push(1);
+	}
+
+	@include lg-devices {
+		@include grid-column;
 	}
 
 	.block-sections {
 		@include grid-column(12);
-		@include grid-push;
+		// @include grid-push;
 		border: 1px solid $about-border-color;
-		margin-bottom: 20px;
+		margin-bottom: 60px;
 		padding: 20px;
 		
-		@include sml-device {
-			@include grid-column(10);
-			@include grid-push(1);
-	}
+		@include sml-devices {
+			@include grid-column(8);
+			@include grid-push(2);
+		}
+
+		@include md-devices {
+			@include grid-column(6);
+			@include grid-push(3);
+		}
+
+		@include lg-devices {
+			@include grid-column(4);
+			
+		}
 
 		
 
 		.about-title {
 			color: $text-about-heading;
-			border-radius: $about-border;
+			border-radius: 10px;
 			border: 1px solid $about-border-color;
-			font-size: $subheading-size;
+			font-size: $about-paragraph;
 			font-weight: 300;
 			padding: 5px 0;
-			border-radius: 10px;
+			text-align: center;
 		}
 
-		> p {
-			font-size: $font-size-xsml;
+		 p {
+			font-size: $about-paragraph;
 			text-align: left;
 		}
 	}
@@ -86,11 +96,14 @@
 	@include grid-column;
 	text-align: center;
 	background: lighten($about-bg-color, 5%);
+	padding: 20px 5px 20px 5px;
+	position: relative;
+	margin-bottom: 90px;
 
 	.techdegree-title {
 		color: $text-about-heading;
-		font-size: $subheading-size;
-		font-weight: 300;
+		font-size: $techdegree-title;
+		font-weight: 300;		
 
 		> span {
 			color: $text-about-subheading;
@@ -98,9 +111,73 @@
 		}
 	}
 
-	p {
+	.techdegree-intro {
 		font-size: $font-body-copy;
 		font-weight: 300;
+
+
+		@include lg-devices {			
+			@include grid-column(10);
+			@include grid-push(1);
+			margin-bottom: 45px;
+		}
+	}
+	
+}
+
+.techdegree-section::before {
+	content: url(../images/icons/badge-icon.svg);
+	display: block;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: -26px;
+	left: -21px;
+
+	@include lg-devices {
+		width: 130px;
+		height: 130px;
+	}
+}
+
+.btn-container {
+	// @include grid-column;
+}
+
+.btn {
+	
+	
+}
+
+.btn-green {
+	// @include grid-column(2);
+	color: $white;
+	background: $btn-green;
+
+	@include lg-devices {
+		@include grid-column(3);
+		@include grid-push(2);
+	}
+
+	@include md-devices {
+		@include grid-column(4);
+		@include grid-push(1);
+	}
+}
+
+.btn-blue {
+	// @include grid-column(2);
+	color: $white;
+	background: $btn-blue;
+
+	@include lg-devices {
+		@include grid-column(3);
+		@include grid-push(2);
+	}
+
+	@include md-devices {
+		@include grid-column(4);
+		@include grid-push(2);
 	}
 }
 

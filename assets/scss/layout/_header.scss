@@ -9,7 +9,6 @@
   border-top: .5rem solid $outer-space;
   height: 400px;
   position: relative;  
-  transition: height 1s ease-out;
   
   @include tablet{
     min-height: 550px;  
@@ -27,7 +26,7 @@
   text-align: center;
   
   @include tablet {
-    margin: -120px 0 0 -196px;
+    margin: -120px 0 0 -203px;
   }
 
    :first-child {
@@ -41,6 +40,7 @@
     margin-top: 0;
     margin-bottom: -.5rem;
     font-size: $font-title-md;
+    font-weight: 700;
 
     @include tablet{
       font-size: $font-title-lg;

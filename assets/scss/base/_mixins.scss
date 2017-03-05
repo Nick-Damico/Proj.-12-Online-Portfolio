@@ -13,8 +13,20 @@
   }
 }
 
-@mixin sml-device {
-  @media #{$brk-sml-device} {
+@mixin sml-devices {
+  @media #{$brk-sml-mobile} {
+    @content;
+  }
+}
+
+@mixin md-devices {
+  @media #{$brk-md-mobile} {
+    @content;
+  }
+}
+
+@mixin lg-devices {
+  @media #{$brk-lg-mobile} {
     @content;
   }
 }

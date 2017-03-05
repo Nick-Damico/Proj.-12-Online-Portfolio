@@ -1,0 +1,13 @@
+.about-icon,
+.skills-icon {
+		width: 80px;
+		height: 80px;
+		margin-top: -40px;
+		position: relative;
+
+		@include tablet {
+			width: 100px;
+			height: 100px;
+			margin-top: -50px;
+		}
+	}

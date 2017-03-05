@@ -10,6 +10,7 @@ body {
   font: $font-base;
   background: $outer-space;
    @include grid-visual;
+   transition: width 1s ease;
 }
 
 a {
@@ -30,3 +31,13 @@ p {
 img {
     max-width: 100%;
 }
+
+.btn {
+    color: white;
+    text-transform: uppercase;
+    background: lightgreen;
+    border: none;
+    padding: .825rem .25rem;
+    border-radius: 8px;
+}
+

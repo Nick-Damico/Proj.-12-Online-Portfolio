@@ -402,6 +402,7 @@ template {
 [hidden] {
   display: none; }
 
+/* 16px */
 /* 18px */
 /* 12px */
 /* 20px */
@@ -413,9 +414,10 @@ BASE STYLES
   box-sizing: border-box; }
 
 body {
-  font: normal 16px/1.4 "Ubuntu", Helvetica, Arial, sans-serif;
+  font: normal 16px/1.4 "Open Sans", Helvetica, Arial, sans-serif;
   background: #2c353e;
-  background-image: linear-gradient(to right, rgba(0, 212, 255, 0.25), rgba(0, 212, 255, 0.25) 20px, transparent 20px, transparent calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px + 20px), transparent calc(25% - 25px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px + 20px), transparent calc(50% - 30px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px + 20px), transparent calc(75% - 35px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100%)); }
+  background-image: linear-gradient(to right, rgba(0, 212, 255, 0.25), rgba(0, 212, 255, 0.25) 20px, transparent 20px, transparent calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px + 20px), transparent calc(25% - 25px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px + 20px), transparent calc(50% - 30px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px + 20px), transparent calc(75% - 35px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100%));
+  transition: width 1s ease; }
 
 a {
   display: block;
@@ -432,6 +434,14 @@ p {
 img {
   max-width: 100%; }
 
+.btn {
+  color: white;
+  text-transform: uppercase;
+  background: lightgreen;
+  border: none;
+  padding: .825rem .25rem;
+  border-radius: 8px; }
+
 /****************************************
   Containers
 /***************************************/
@@ -439,6 +449,16 @@ img {
 .body-wrapper {
   max-width: 1200px;
   margin: 0 auto; }
+
+.inner-wrapper {
+  max-width: 960px;
+  margin: 0 auto; }
+
+/* --- About Block wrapper --- */
+.about-wrapper {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /****************************************
   MAIN-HEADER
@@ -448,13 +468,12 @@ img {
   background-size: cover;
   border-top: 0.5rem solid #2c353e;
   height: 400px;
-  position: relative;
-  transition: height 1s ease-out; }
+  position: relative; }
   #main-header::after {
     clear: both;
     content: "";
     display: block; }
-  @media (min-width: 460px) {
+  @media (min-width: 499px) {
     #main-header {
       min-height: 550px; } }
 
@@ -464,19 +483,20 @@ img {
   top: 50%;
   left: 50%;
   text-align: center; }
-  @media (min-width: 460px) {
+  @media (min-width: 499px) {
     .intro-header {
-      margin: -120px 0 0 -196px; } }
+      margin: -120px 0 0 -203px; } }
   .intro-header :first-child {
     font-size: 1.375rem;
     font-weight: 300;
     line-height: 1.1; }
   .intro-header .main-heading {
-    font-family: "Lobster", cursive;
+    font-family: "Lobster Two", cursive;
     margin-top: 0;
     margin-bottom: -.5rem;
-    font-size: 2.5rem; }
-    @media (min-width: 460px) {
+    font-size: 2.5rem;
+    font-weight: 700; }
+    @media (min-width: 499px) {
       .intro-header .main-heading {
         font-size: 3rem; } }
   .intro-header .title-rule {
@@ -489,7 +509,7 @@ img {
     font-size: 0.75rem;
     font-weight: 300;
     letter-spacing: 2px; }
-    @media (min-width: 460px) {
+    @media (min-width: 499px) {
       .intro-header .sub-heading {
         font-size: 1rem; } }
 
@@ -517,14 +537,14 @@ img {
     float: left;
     margin-left: 20px;
     background: rgba(44, 53, 62, 0.85); }
-    @media (min-width: 460px) {
+    @media (min-width: 499px) {
       #main-nav .nav-links {
         display: initial;
         background: none;
         display: flex;
         justify-content: flex-end;
         margin-right: -12px; } }
-    @media (min-width: 460px) {
+    @media (min-width: 499px) {
       #main-nav .nav-links li.selected {
         background: #2c353e; }
         #main-nav .nav-links li.selected > a {
@@ -534,7 +554,7 @@ img {
       text-align: center;
       text-transform: uppercase;
       transition: all .6s ease-out; }
-      @media (min-width: 460px) {
+      @media (min-width: 499px) {
         #main-nav .nav-links li {
           margin-bottom: 0;
           margin-right: .25rem;
@@ -548,7 +568,7 @@ img {
         color: #fafafa;
         font-size: 0.75rem;
         padding: 8px 10px; }
-        @media (min-width: 460px) {
+        @media (min-width: 499px) {
           #main-nav .nav-links li a {
             color: #2c353e;
             padding: 0; } }
@@ -558,16 +578,17 @@ img {
     position: absolute;
     right: 10px;
     top: 10px; }
-    @media (min-width: 460px) {
+    @media (min-width: 499px) {
       #main-nav #nav-icon {
         display: none; } }
 
 #about-me {
   background: #313e5c;
   color: #fafafa;
-  text-align: center;
   position: relative;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  text-align: center;
+  transition: width .8s ease-out; }
   #about-me::after {
     clear: both;
     content: "";
@@ -577,60 +598,68 @@ img {
     float: left;
     margin-left: 20px;
     color: #33cf89;
-    font-family: "Lobster", cursive;
+    font-family: "Lobster Two", cursive;
     font-size: 2.5rem;
+    font-weight: 400;
     margin-top: 0px;
     margin-bottom: 15px; }
   #about-me .section-intro {
     font-size: 1.125rem;
     font-weight: 300;
-    margin-bottom: 28px; }
-    @media (min-width: 460px) {
+    margin-bottom: 60px; }
+    @media (min-width: 499px) {
       #about-me .section-intro {
         width: calc(66.66667% - 33.33333px);
         float: left;
         margin-left: 20px;
         margin-left: calc(16.66667% - 23.33333px + 40px); } }
-  #about-me .about-icon {
-    width: 80px;
-    height: 80px;
-    margin-top: -40px; }
-    @media (min-width: 460px) {
-      #about-me .about-icon {
-        width: 100px;
-        height: 100px;
-        margin-top: -50px; } }
+    @media (min-width: 699px) {
+      #about-me .section-intro {
+        font-size: 1rem;
+        width: calc(50% - 30px);
+        float: left;
+        margin-left: 20px;
+        margin-left: calc(25% - 25px + 40px); } }
 
-@media (min-width: 460px) {
+@media (min-width: 699px) {
   .about-block-container {
-    width: calc(66.66667% - 33.33333px);
+    width: calc(100% - 40px);
     float: left;
-    margin-left: 20px;
-    margin-left: calc(16.66667% - 23.33333px + 40px); } }
+    margin-left: 20px; } }
 .about-block-container .block-sections {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  margin-left: 20px;
   border: 1px solid #fefe77;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   padding: 20px; }
   @media (min-width: 400px) {
     .about-block-container .block-sections {
-      width: calc(83.33333% - 36.66667px);
+      width: calc(66.66667% - 33.33333px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(8.33333% - 21.66667px + 40px); } }
+      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+  @media (min-width: 599px) {
+    .about-block-container .block-sections {
+      width: calc(50% - 30px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(25% - 25px + 40px); } }
+  @media (min-width: 699px) {
+    .about-block-container .block-sections {
+      width: calc(33.33333% - 26.66667px);
+      float: left;
+      margin-left: 20px; } }
   .about-block-container .block-sections .about-title {
     color: #33cf89;
-    border-radius: 3%;
+    border-radius: 10px;
     border: 1px solid #fefe77;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 300;
     padding: 5px 0;
-    border-radius: 10px; }
-  .about-block-container .block-sections > p {
-    font-size: 0.75rem;
+    text-align: center; }
+  .about-block-container .block-sections p {
+    font-size: 1rem;
     text-align: left; }
 
 .techdegree-section {
@@ -638,7 +667,10 @@ img {
   float: left;
   margin-left: 20px;
   text-align: center;
-  background: #3a496d; }
+  background: #3a496d;
+  padding: 20px 5px 20px 5px;
+  position: relative;
+  margin-bottom: 90px; }
   .techdegree-section .techdegree-title {
     color: #33cf89;
     font-size: 1.5rem;
@@ -646,14 +678,87 @@ img {
     .techdegree-section .techdegree-title > span {
       color: #fefe77;
       font-weight: 400; }
-  .techdegree-section p {
+  .techdegree-section .techdegree-intro {
     font-size: 1.125rem;
     font-weight: 300; }
+    @media (min-width: 699px) {
+      .techdegree-section .techdegree-intro {
+        width: calc(83.33333% - 36.66667px);
+        float: left;
+        margin-left: 20px;
+        margin-left: calc(8.33333% - 21.66667px + 40px);
+        margin-bottom: 45px; } }
+
+.techdegree-section::before {
+  content: url(../images/icons/badge-icon.svg);
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -26px;
+  left: -21px; }
+  @media (min-width: 699px) {
+    .techdegree-section::before {
+      width: 130px;
+      height: 130px; } }
+
+.btn-green {
+  color: #fafafa;
+  background: #33cf89; }
+  @media (min-width: 699px) {
+    .btn-green {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+  @media (min-width: 599px) {
+    .btn-green {
+      width: calc(33.33333% - 26.66667px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(8.33333% - 21.66667px + 40px); } }
+
+.btn-blue {
+  color: #fafafa;
+  background: #288ada; }
+  @media (min-width: 699px) {
+    .btn-blue {
+      width: calc(25% - 25px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+  @media (min-width: 599px) {
+    .btn-blue {
+      width: calc(33.33333% - 26.66667px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+
+#skills-section {
+  height: 450px;
+  background: #33cf89;
+  text-align: center; }
+  #skills-section::after {
+    clear: both;
+    content: "";
+    display: block; }
 
 /* ---- Footer---- */
 /* ---- Container ---- */
 /* ---- ClearFix ---- */
 /* ---- Font Styles---- */
 /* ---- h2 Title all Containers/ Sections ---- */
+.about-icon,
+.skills-icon {
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  position: relative; }
+  @media (min-width: 499px) {
+    .about-icon,
+    .skills-icon {
+      width: 100px;
+      height: 100px;
+      margin-top: -50px; } }
 
 /*# sourceMappingURL=application.css.map */

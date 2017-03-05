@@ -1,0 +1,6 @@
+#skills-section {
+	@include grid-container;
+	height: 450px;
+	background: $skills-bg;
+	text-align: center;
+}

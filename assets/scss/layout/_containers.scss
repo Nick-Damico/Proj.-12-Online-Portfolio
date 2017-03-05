@@ -5,7 +5,7 @@
 $my-custom-grid: (
   columns: 12,
   gutter: 20px,
-  media: 1200px,
+  media: 960px,
   color: rgba(#00d4ff, 0.25),
   direction: ltr,
 );
@@ -14,4 +14,16 @@ $my-custom-grid: (
 .body-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.inner-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* --- About Block wrapper --- */
+.about-wrapper {
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
 }
