@@ -11,6 +11,8 @@
 	@include grid-column;
 
 	.skills-inner {
+		flex-grow: 1;
+		padding-top: 1rem;
 		padding-left: 1rem;
 		padding-right: 1rem;
 		text-align: left;
@@ -24,12 +26,29 @@
 		}
 	}
 
-
 	.skills-block {
-		background: darken($shamrock, 10%);		
+		background: darken($shamrock, 8%);		
 		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-self: stretch;
 		min-height: 440px;
 		margin-bottom: 8%;
+
+		@include md-devices {
+			@include grid-column(6);
+		}
+
+		@include lg-devices {
+			@include grid-column(4);
+			@include grid-push(1)
+		}
+
+		&:nth-child(2) {
+			@include lg-devices {
+				@include grid-push(2);
+			}
+		}
 
 
 		.skills-subtitle {
@@ -39,19 +58,48 @@
 	    	background: $skills-block-bg;
 	    	padding-top: 1rem;
 	   		padding-bottom: 1rem;
+	   		margin: 0;
+		}	
+
+		.points,
+		.total {			
+			font-family: $text-style-about;
 		}
-
-		.skills-list {
-			list-style: dotted;
-
-			li {
-				padding: 0 0 1rem 0;
-			}
-		}
-
 		.points {
 			float: right;
 		}
 	}
+
+	ul.skills-list {
+			display: flex;
+			flex-direction: column;
+			min-height: 250px;
+			justify-content: space-around;
+		
+		}
+		.skills-list li {
+			border-bottom: dotted;
+			border-color: darken($shamrock, 20%);
+			padding-bottom: 4px;
+		}
+
+	ul.tech {
+    padding: 0;
+    text-align: center;
+
+	     li {
+		    border-radius: 6px;
+		    display: inline-block;
+		    background: $tech-bg;
+		    color: white;
+		    padding: 5px 10px;
+		    margin: 2px;
+		}
+		 li:nth-child(odd) {
+		    background: $tech-bg-even;
+		}
+
+	}
+	
 
 }
