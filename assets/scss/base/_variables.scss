@@ -78,13 +78,9 @@ $path-img  : '../img';
 
 
 // Buttons
-%btn {
-	color: white;
-    text-transform: uppercase;
-    border: 1px solid white;
-    padding: .825rem 2rem;
-    border-radius: 8px;
-}
+
+$btn-text-sml 		:  $font-size-xsml;
+$btn-text-color		:  $white;
 
 
 //////////////////////////////
@@ -120,6 +116,7 @@ $text-about-subheading    : $paris-daisy;
 $about-header		      : $font-title-md;
 $about-subheading		  : $font-title-md;
 $techdegree-title		  : $font-size-lg;
+$about-title			  : $font-size-sml;
 
 $about-paragraph		  : $font-size-normal;
 $about-paragraph-sm 	  : $font-body-copy;
@@ -137,10 +134,17 @@ $about-border-color		  : $paris-daisy;
 
 $skills-bg 				  : $shamrock;
 
+$skills-block-bg		  : darken($shamrock, 12%);
+
+$text-size-subtitle		  : $font-size-sml;
+
+$text-size-total		  : $font-size-sml;
+
+
 
 // Media Query
 
-$brk-sml-mobile	: '(min-width: 400px)';
+$brk-sml-mobile	: '(min-width: 440px)';
 $brk-md-mobile  : '(min-width: 599px )';
 $brk-lg-mobile 	: '(min-width: 699px)';
 $brk-tablet :  '(min-width: 499px)';

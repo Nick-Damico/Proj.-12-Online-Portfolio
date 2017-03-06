@@ -8,8 +8,9 @@
 	padding-bottom: 3rem;
 	text-align: center;
 	transition: width .8s ease-out;
+}
 
-	.section-title  {
+.section-title  {
 		@include grid-column;
 		color: $text-about-heading;
 		font-family: $text-style-about;
@@ -18,33 +19,26 @@
 		margin-top: 0px;
 		margin-bottom: 15px;
 	}
+.section-intro {
+	font-size: $about-paragraph-sm;
+	font-weight: 300;
+	margin-bottom: 60px;
 
-	.section-intro {
-		font-size: $about-paragraph-sm;
-		font-weight: 300;
-		margin-bottom: 60px;
-
-		@include tablet {			
-			@include grid-column(8);
-			@include grid-push(2);			
-		}
-
-		@include lg-devices {
-			font-size: $about-paragraph;
-			@include grid-column(6);
-			@include grid-push(3);
-		}
+	@include tablet {			
+		@include grid-column(8);
+		@include grid-push(2);			
 	}
 
+	@include lg-devices {
+		font-size: $about-paragraph;
+		@include grid-column(6);
+		@include grid-push(3);
+	}
 }
 
 .about-block-container {
 
 	@include tablet {
-
-
-		// @include grid-column(10);
-		// @include grid-push(1);
 	}
 
 	@include lg-devices {
@@ -53,7 +47,6 @@
 
 	.block-sections {
 		@include grid-column(12);
-		// @include grid-push;
 		border: 1px solid $about-border-color;
 		margin-bottom: 60px;
 		padding: 20px;
@@ -77,9 +70,9 @@
 
 		.about-title {
 			color: $text-about-heading;
-			border-radius: 10px;
+			border-radius: 1rem;
 			border: 1px solid $about-border-color;
-			font-size: $about-paragraph;
+			font-size: $about-title;
 			font-weight: 300;
 			padding: 5px 0;
 			text-align: center;
@@ -88,6 +81,10 @@
 		 p {
 			font-size: $about-paragraph;
 			text-align: left;
+
+			@include lg-devices {
+				font-size: $about-paragraph-xs;
+			}
 		}
 	}
 }
@@ -140,44 +137,5 @@
 	}
 }
 
-.btn-container {
-	// @include grid-column;
-}
 
-.btn {
-	
-	
-}
-
-.btn-green {
-	// @include grid-column(2);
-	color: $white;
-	background: $btn-green;
-
-	@include lg-devices {
-		@include grid-column(3);
-		@include grid-push(2);
-	}
-
-	@include md-devices {
-		@include grid-column(4);
-		@include grid-push(1);
-	}
-}
-
-.btn-blue {
-	// @include grid-column(2);
-	color: $white;
-	background: $btn-blue;
-
-	@include lg-devices {
-		@include grid-column(3);
-		@include grid-push(2);
-	}
-
-	@include md-devices {
-		@include grid-column(4);
-		@include grid-push(2);
-	}
-}
 

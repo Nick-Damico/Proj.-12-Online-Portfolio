@@ -1,6 +1,57 @@
 #skills-section {
-	@include grid-container;
-	height: 450px;
+	@extend #about-me;
 	background: $skills-bg;
-	text-align: center;
+
+	.skills-title {
+		color: $outer-space;
+	}
+}
+
+.skills-block-container {
+	@include grid-column;
+
+	.skills-inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		text-align: left;
+
+		.total,
+		.points {
+			color: $outer-space;
+		}
+		.total {
+			font-size: $text-size-total;
+		}
+	}
+
+
+	.skills-block {
+		background: darken($shamrock, 10%);		
+		border-radius: 1rem;
+		min-height: 440px;
+		margin-bottom: 8%;
+
+
+		.skills-subtitle {
+			font-size: $text-size-subtitle;	    
+	   		border-top-left-radius: 1rem;
+	   		border-top-right-radius: 1rem;
+	    	background: $skills-block-bg;
+	    	padding-top: 1rem;
+	   		padding-bottom: 1rem;
+		}
+
+		.skills-list {
+			list-style: dotted;
+
+			li {
+				padding: 0 0 1rem 0;
+			}
+		}
+
+		.points {
+			float: right;
+		}
+	}
+
 }

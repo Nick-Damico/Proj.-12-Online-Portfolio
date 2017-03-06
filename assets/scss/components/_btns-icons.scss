@@ -11,3 +11,52 @@
 			margin-top: -50px;
 		}
 	}
+.btn {
+	min-width: 100px;
+	font-size: $btn-text-sml;
+	color: $white;
+}
+
+.btn-green {
+@include grid-column(6);
+
+
+background: $btn-green;
+
+@include lg-devices {
+	@include grid-column(3);
+	@include grid-push(2);
+}
+
+@include md-devices {
+	@include grid-column(4);
+	@include grid-push(1);
+}
+
+@include lg-devices {
+	@include grid-column(2);
+	@include grid-push(3);
+}
+
+}
+
+.btn-blue {
+	@include grid-column(6);
+	color: $white;
+	background: $btn-blue;
+
+	@include lg-devices {
+		@include grid-column(3);
+		@include grid-push(2);
+	}
+
+	@include md-devices {
+		@include grid-column(4);
+		@include grid-push(2);
+	}
+
+	@include lg-devices {
+		@include grid-column(2);
+		@include grid-push(2);
+}
+}
