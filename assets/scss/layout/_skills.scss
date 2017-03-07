@@ -40,8 +40,8 @@
 		}
 
 		@include lg-devices {
-			@include grid-column(4);
-			@include grid-push(1)
+			@include grid-column(5);
+			// @include grid-push(1)
 		}
 
 		&:nth-child(2) {
