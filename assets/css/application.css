@@ -813,6 +813,11 @@ img {
     margin-right: auto; }
   #portfolio-section .section-intro {
     color: #33cf89; }
+  #portfolio-section .portfolio-title {
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 5px 0 8px 0; }
 
 #contact-section {
   background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../images/contact-img.png") no-repeat center;
