@@ -5,4 +5,29 @@
 	.portfolio-title {
 		color: $port-title-color;
 	}
+
+	.col {
+		@include grid-column;
+		margin-bottom: 20px;
+		text-align: center;
+
+		@include md-devices {
+			@include grid-column(6);
+		}
+		@include lg-devices {
+			@include grid-column(4)
+		}
+	}
+	.portfolio-item {
+		background: $port-item-bg;		
+		padding: 1.25rem 1rem;
+		border-radius: 8px;
+		max-width: 300px;
+		    margin-left: auto;
+    margin-right: auto;
+	}
+
+	.section-intro {
+		color: $shamrock;
+	}
 }
