@@ -13,45 +13,41 @@
 			margin-top: -50px;
 		}
 	}
+
 .btn {
-	min-width: 100px;
-	font-size: $btn-text-sml;
-	color: $white;
-}
-
-.portfolio-btn {
 	background: none;
-	border: 1px solid $shamrock;
 	border-radius: 8px;
-}
-
-.btn-green {
-@include grid-column(6);
-
-
-background: $btn-green;
-
-@include lg-devices {
-	@include grid-column(3);
-	@include grid-push(2);
-}
-
-@include md-devices {
-	@include grid-column(4);
-	@include grid-push(1);
-}
-
-@include lg-devices {
-	@include grid-column(2);
-	@include grid-push(3);
-}
-
-}
-
-.btn-blue {
-	@include grid-column(6);
+	border-style: solid;
+	border-width: 1px;
 	color: $white;
-	background: $btn-blue;
+	font-size: $btn-text-sml;
+	min-width: 100px;
+	transition: background .8s ease-out;
+}
+
+.btn-1of2-layout {
+	@include grid-column(6);
+	
+
+	@include lg-devices {
+		@include grid-column(3);
+		@include grid-push(2);
+	}
+
+	@include md-devices {
+		@include grid-column(4);
+		@include grid-push(1);
+	}
+
+	@include lg-devices {
+		@include grid-column(2);
+		@include grid-push(3);
+	}
+
+}
+
+.btn-2of2-layout {
+	@include grid-column(6);
 
 	@include lg-devices {
 		@include grid-column(3);
@@ -66,5 +62,44 @@ background: $btn-green;
 	@include lg-devices {
 		@include grid-column(2);
 		@include grid-push(2);
+	}
 }
+
+.btn-green {
+	border-color: $btn-green;
+
+	&:hover {
+		background: $btn-green;
+	}
+}
+
+.btn-green-solid {
+	background: $btn-green;
+}
+
+.btn-blue {
+	border-color: $btn-blue;
+
+	&:hover {
+		background: $btn-blue;
+	}
+}
+
+.btn-blue-solid {
+	background: $btn-blue;
+}
+
+.btn-git {
+	border-color: $btn-burnt;
+
+	&:hover {
+		background: $btn-burnt;	
+	}
+}
+
+.btn-close {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	padding: 0;
 }

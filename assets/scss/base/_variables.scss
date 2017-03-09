@@ -28,7 +28,7 @@ $text-grey          : $grey;
 
 $btn-blue			: $curious-blue;
 $btn-green			: $shamrock;
-
+$btn-burnt			: $burnt-sienna;
 
 
 
@@ -146,13 +146,22 @@ $tech-bg-even			  : $burnt-sienna;
 
 
 //////////////////////////////
+// MODAL
+//////////////////////////////
+
+$modal-bg					  : $outer-space;
+$modal-proj-title-size		  : 1.75rem;
+
+
+//////////////////////////////
 // Portfolio Section
 //////////////////////////////
 $portfolio-bg 			   : $white;
 $port-title-color		   : $outer-space;
 $port-item-bg			   : $curious-blue;
 
-$portfolio-title 		   : $white;
+$portfolio-title 		   : $curious-blue;
+$portfolio-subtitle		   : $white;
 $portfolio-title-size	   : $font-title-sml;
 
 

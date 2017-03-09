@@ -416,6 +416,7 @@ BASE STYLES
 body {
   font: normal 16px/1.4 "Open Sans", Helvetica, Arial, sans-serif;
   background: #2c353e;
+  position: relative;
   background-image: linear-gradient(to right, rgba(0, 212, 255, 0.25), rgba(0, 212, 255, 0.25) 20px, transparent 20px, transparent calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px + 20px), transparent calc(25% - 25px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px + 20px), transparent calc(50% - 30px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px + 20px), transparent calc(75% - 35px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100%));
   transition: width 1s ease; }
 
@@ -468,7 +469,8 @@ img {
   background-size: cover;
   border-top: 0.5rem solid #2c353e;
   height: 400px;
-  position: relative; }
+  position: relative;
+  min-height: 550px; }
   #main-header::after {
     clear: both;
     content: "";
@@ -476,42 +478,31 @@ img {
   @media (min-width: 499px) {
     #main-header {
       min-height: 550px; } }
+  @media (min-width: 699px) {
+    #main-header {
+      min-height: 700px; } }
+  @media (min-width: 1024px) {
+    #main-header {
+      min-height: 850px; } }
 
 .intro-header {
   margin: -89px 0 0 -158px;
   position: absolute;
   top: 50%;
-  left: 50%;
-  text-align: center; }
+  left: 50%; }
   @media (min-width: 499px) {
     .intro-header {
       margin: -120px 0 0 -203px; } }
-  .intro-header :first-child {
-    font-size: 1.375rem;
-    font-weight: 300;
-    line-height: 1.1; }
-  .intro-header .main-heading {
-    font-family: "Lobster Two", cursive;
-    margin-top: 0;
-    margin-bottom: -.5rem;
-    font-size: 2.5rem;
-    font-weight: 700; }
-    @media (min-width: 499px) {
-      .intro-header .main-heading {
-        font-size: 3rem; } }
-  .intro-header .title-rule {
-    display: block;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto; }
-  .intro-header .sub-heading {
-    color: #fefe77;
-    font-size: 0.75rem;
-    font-weight: 300;
-    letter-spacing: 2px; }
-    @media (min-width: 499px) {
-      .intro-header .sub-heading {
-        font-size: 1rem; } }
+
+.main-heading {
+  margin-top: 0;
+  margin-bottom: -.5rem; }
+
+.title-rule {
+  display: block;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Toggle Drop-down menu button */
 #main-nav {
@@ -582,14 +573,12 @@ img {
       #main-nav #nav-icon {
         display: none; } }
 
-#about-me, #skills-section, #portfolio-section, #contact-section {
+#about-me, #skills-section, #portfolio-section, #contact-section, #modal {
   background: #313e5c;
-  color: #fafafa;
   position: relative;
   padding-bottom: 3rem;
-  text-align: center;
   transition: width .8s ease-out; }
-  #about-me::after, #skills-section::after, #portfolio-section::after, #contact-section::after {
+  #about-me::after, #skills-section::after, #portfolio-section::after, #contact-section::after, #modal::after {
     clear: both;
     content: "";
     display: block; }
@@ -598,14 +587,13 @@ img {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  color: #33cf89;
-  font-family: "Lobster Two", cursive;
-  font-size: 2.5rem;
-  font-weight: 400;
   margin-top: 0px;
   margin-bottom: 15px; }
 
 .section-intro {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
   font-size: 1.125rem;
   font-weight: 300;
   margin-bottom: 60px; }
@@ -617,7 +605,6 @@ img {
       margin-left: calc(16.66667% - 23.33333px + 40px); } }
   @media (min-width: 699px) {
     .section-intro {
-      font-size: 1rem;
       width: calc(50% - 30px);
       float: left;
       margin-left: 20px;
@@ -653,46 +640,18 @@ img {
       float: left;
       margin-left: 20px; } }
   .about-block-container .block-sections .about-title {
-    color: #33cf89;
     border-radius: 1rem;
     border: 1px solid #fefe77;
-    font-size: 1.25rem;
-    font-weight: 300;
-    padding: 5px 0;
-    text-align: center; }
-  .about-block-container .block-sections p {
-    font-size: 1rem;
-    text-align: left; }
-    @media (min-width: 699px) {
-      .about-block-container .block-sections p {
-        font-size: 0.75rem; } }
+    padding: 5px 0; }
 
 .techdegree-section {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  text-align: center;
   background: #3a496d;
   padding: 20px 5px 20px 5px;
   position: relative;
   margin-bottom: 90px; }
-  .techdegree-section .techdegree-title {
-    color: #33cf89;
-    font-size: 1.5rem;
-    font-weight: 300; }
-    .techdegree-section .techdegree-title > span {
-      color: #fefe77;
-      font-weight: 400; }
-  .techdegree-section .techdegree-intro {
-    font-size: 1.125rem;
-    font-weight: 300; }
-    @media (min-width: 699px) {
-      .techdegree-section .techdegree-intro {
-        width: calc(83.33333% - 36.66667px);
-        float: left;
-        margin-left: 20px;
-        margin-left: calc(8.33333% - 21.66667px + 40px);
-        margin-bottom: 45px; } }
 
 .techdegree-section::before {
   content: url(../images/icons/badge-icon.svg);
@@ -814,7 +773,7 @@ img {
     min-height: 280px; }
   #portfolio-section .section-intro {
     color: #33cf89; }
-  #portfolio-section .portfolio-title {
+  #portfolio-section .portfolio-subtitle {
     color: #fafafa;
     font-size: 1.5rem;
     font-weight: 300;
@@ -834,7 +793,77 @@ img {
 /* ---- Footer---- */
 /* ---- Container ---- */
 /* ---- ClearFix ---- */
-/* ---- Font Styles---- */
+/***************************************************
+ Font Styles
+***************************************************/
+/* --	HEADER  -- */
+.intro-header {
+  text-align: center; }
+  .intro-header :first-child {
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 1.1; }
+
+.main-heading {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.5rem;
+  font-weight: 700; }
+  @media (min-width: 499px) {
+    .main-heading {
+      font-size: 3rem; } }
+
+.sub-heading {
+  color: #fefe77;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 2px; }
+  @media (min-width: 499px) {
+    .sub-heading {
+      font-size: 1rem; } }
+
+/* --	ABOUT  -- */
+#about-me, #skills-section, #portfolio-section, #contact-section, #modal {
+  color: #fafafa;
+  text-align: center; }
+
+.section-title {
+  color: #33cf89;
+  font-family: "Lobster Two", cursive;
+  font-size: 2.5rem;
+  font-weight: 400; }
+
+.section-intro {
+  font-size: 1.125rem;
+  font-weight: 300; }
+  @media (min-width: 699px) {
+    .section-intro {
+      font-size: 1rem; } }
+
+.about-block-container .block-sections .about-title {
+  color: #33cf89;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center; }
+.about-block-container .block-sections p {
+  font-size: 1rem;
+  text-align: left; }
+  @media (min-width: 699px) {
+    .about-block-container .block-sections p {
+      font-size: 0.75rem; } }
+
+.techdegree-section {
+  text-align: center; }
+  .techdegree-section .techdegree-title {
+    color: #33cf89;
+    font-size: 1.5rem;
+    font-weight: 300; }
+    .techdegree-section .techdegree-title > span {
+      color: #fefe77;
+      font-weight: 400; }
+
+/* --	SKILLS  -- */
+/* --	PORTFOLIO  -- */
+/* --	CONTACT  -- */
 /* ---- h2 Title all Containers/ Sections ---- */
 .about-icon,
 .skills-icon,
@@ -854,62 +883,111 @@ img {
       margin-top: -50px; } }
 
 .btn {
-  min-width: 100px;
-  font-size: 0.75rem;
-  color: #fafafa; }
-
-.portfolio-btn {
   background: none;
-  border: 1px solid #33cf89;
-  border-radius: 8px; }
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  color: #fafafa;
+  font-size: 0.75rem;
+  min-width: 100px;
+  transition: background .8s ease-out; }
 
-.btn-green {
+.btn-1of2-layout {
   width: calc(50% - 30px);
   float: left;
-  margin-left: 20px;
-  background: #33cf89; }
+  margin-left: 20px; }
   @media (min-width: 699px) {
-    .btn-green {
+    .btn-1of2-layout {
       width: calc(25% - 25px);
       float: left;
       margin-left: 20px;
       margin-left: calc(16.66667% - 23.33333px + 40px); } }
   @media (min-width: 599px) {
-    .btn-green {
+    .btn-1of2-layout {
       width: calc(33.33333% - 26.66667px);
       float: left;
       margin-left: 20px;
       margin-left: calc(8.33333% - 21.66667px + 40px); } }
   @media (min-width: 699px) {
-    .btn-green {
+    .btn-1of2-layout {
       width: calc(16.66667% - 23.33333px);
       float: left;
       margin-left: 20px;
       margin-left: calc(25% - 25px + 40px); } }
 
-.btn-blue {
+.btn-2of2-layout {
   width: calc(50% - 30px);
   float: left;
-  margin-left: 20px;
-  color: #fafafa;
-  background: #288ada; }
+  margin-left: 20px; }
   @media (min-width: 699px) {
-    .btn-blue {
+    .btn-2of2-layout {
       width: calc(25% - 25px);
       float: left;
       margin-left: 20px;
       margin-left: calc(16.66667% - 23.33333px + 40px); } }
   @media (min-width: 599px) {
-    .btn-blue {
+    .btn-2of2-layout {
       width: calc(33.33333% - 26.66667px);
       float: left;
       margin-left: 20px;
       margin-left: calc(16.66667% - 23.33333px + 40px); } }
   @media (min-width: 699px) {
-    .btn-blue {
+    .btn-2of2-layout {
       width: calc(16.66667% - 23.33333px);
       float: left;
       margin-left: 20px;
       margin-left: calc(16.66667% - 23.33333px + 40px); } }
+
+.btn-green {
+  border-color: #33cf89; }
+  .btn-green:hover {
+    background: #33cf89; }
+
+.btn-green-solid {
+  background: #33cf89; }
+
+.btn-blue {
+  border-color: #288ada; }
+  .btn-blue:hover {
+    background: #288ada; }
+
+.btn-blue-solid {
+  background: #288ada; }
+
+.btn-git {
+  border-color: #ec6f60; }
+  .btn-git:hover {
+    background: #ec6f60; }
+
+.btn-close {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 0; }
+
+#modal {
+  background: #2c353e;
+  z-index: 1000;
+  text-align: left; }
+  #modal .section-title {
+    border-bottom: 2px solid #fafafa;
+    margin-bottom: 3rem;
+    margin-left: 0;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; }
+  #modal .modal-content {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
+    #modal .modal-content .modal-proj-title {
+      font-size: 1.75rem;
+      font-family: "Lobster Two", cursive;
+      text-align: left; }
+    #modal .modal-content .proj-description {
+      text-align: left;
+      margin-bottom: 1rem; }
+      #modal .modal-content .proj-description:nth-of-type(2) {
+        margin-bottom: 3rem; }
 
 /*# sourceMappingURL=application.css.map */

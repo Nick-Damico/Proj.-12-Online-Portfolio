@@ -3,23 +3,19 @@
 #about-me {
 	@include grid-container;
 	background: $about-bg-color;
-	color: $about-text-color;
 	position: relative;
 	padding-bottom: 3rem;
-	text-align: center;
 	transition: width .8s ease-out;
 }
 
 .section-title  {
 		@include grid-column;
-		color: $text-about-heading;
-		font-family: $text-style-about;
-		font-size: $about-header;
-		font-weight: 400;
 		margin-top: 0px;
 		margin-bottom: 15px;
 	}
+
 .section-intro {
+	@include grid-column;
 	font-size: $about-paragraph-sm;
 	font-weight: 300;
 	margin-bottom: 60px;
@@ -30,16 +26,12 @@
 	}
 
 	@include lg-devices {
-		font-size: $about-paragraph;
 		@include grid-column(6);
 		@include grid-push(3);
 	}
 }
 
 .about-block-container {
-
-	@include tablet {
-	}
 
 	@include lg-devices {
 		@include grid-column;
@@ -66,59 +58,21 @@
 			
 		}
 
-		
-
-		.about-title {
-			color: $text-about-heading;
+		.about-title {			
 			border-radius: 1rem;
-			border: 1px solid $about-border-color;
-			font-size: $about-title;
-			font-weight: 300;
+			border: 1px solid $about-border-color;		
 			padding: 5px 0;
-			text-align: center;
-		}
-
-		 p {
-			font-size: $about-paragraph;
-			text-align: left;
-
-			@include lg-devices {
-				font-size: $about-paragraph-xs;
-			}
+			
 		}
 	}
 }
 
 .techdegree-section {
 	@include grid-column;
-	text-align: center;
 	background: lighten($about-bg-color, 5%);
 	padding: 20px 5px 20px 5px;
 	position: relative;
 	margin-bottom: 90px;
-
-	.techdegree-title {
-		color: $text-about-heading;
-		font-size: $techdegree-title;
-		font-weight: 300;		
-
-		> span {
-			color: $text-about-subheading;
-			font-weight: 400;
-		}
-	}
-
-	.techdegree-intro {
-		font-size: $font-body-copy;
-		font-weight: 300;
-
-
-		@include lg-devices {			
-			@include grid-column(10);
-			@include grid-push(1);
-			margin-bottom: 45px;
-		}
-	}
 	
 }
 

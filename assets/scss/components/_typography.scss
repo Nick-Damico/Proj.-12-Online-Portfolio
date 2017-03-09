@@ -1,4 +1,107 @@
-/* ---- Font Styles---- */
+/***************************************************
+ Font Styles
+***************************************************/ 
 
+/* --	HEADER  -- */
+.intro-header {
+	text-align: center;
+
+	:first-child {
+		font-size: $font-size-md;
+    	font-weight: 300; 
+    	line-height: 1.1;     
+	}
+}
+
+.main-heading {
+	font-family: $stack-lobster-cursive;
+ 	font-size: $font-title-md;
+    font-weight: 700;
+
+    @include tablet{
+      font-size: $font-title-lg;
+    }
+}
+
+.sub-heading {
+	color: $text-sub-heading;
+    font-size: $font-size-xsml;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+     @include tablet {
+      font-size: 1rem;
+    }
+}
+
+/* --	ABOUT  -- */
+#about-me {
+	color: $about-text-color;
+	text-align: center;
+}
+
+.section-title {
+	color: $text-about-heading;
+	font-family: $text-style-about;
+	font-size: $about-header;
+	font-weight: 400;
+}
+
+.section-intro {
+	font-size: $about-paragraph-sm;
+	font-weight: 300;
+
+	@include lg-devices {
+		font-size: $about-paragraph;
+	}
+
+}
+
+.about-block-container {
+
+	.block-sections {
+
+		.about-title {
+			color: $text-about-heading;
+			font-size: $about-title;
+			font-weight: 300;
+			text-align: center;
+		}
+
+		 p {
+			font-size: $about-paragraph;
+			text-align: left;
+
+			@include lg-devices {
+				font-size: $about-paragraph-xs;
+			}
+		}
+	}
+}
+
+.techdegree-section {
+	text-align: center;
+
+	.techdegree-title {
+		color: $text-about-heading;
+		font-size: $techdegree-title;
+		font-weight: 300;		
+
+		> span {
+			color: $text-about-subheading;
+			font-weight: 400;
+		}
+	}
+
+}
+
+
+/* --	SKILLS  -- */
+
+
+/* --	PORTFOLIO  -- */
+
+
+/* --	CONTACT  -- */
 
 /* ---- h2 Title all Containers/ Sections ---- */

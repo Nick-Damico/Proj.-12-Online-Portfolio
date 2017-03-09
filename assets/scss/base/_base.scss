@@ -9,6 +9,7 @@ BASE STYLES
 body {
   font: $font-base;
   background: $outer-space;
+  position: relative;
    @include grid-visual;
    transition: width 1s ease;
 }

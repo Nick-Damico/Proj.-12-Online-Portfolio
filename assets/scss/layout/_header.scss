@@ -9,11 +9,20 @@
   border-top: .5rem solid $outer-space;
   height: 400px;
   position: relative;  
+  min-height: 550px;
   
   @include tablet{
     min-height: 550px;  
     // padding-left: 20px;
     // padding-right: 20px;
+  }
+
+  @include lg-devices {
+    min-height: 700px;
+  }
+
+  @include wide-devices {
+    min-height: 850px;
   }
   
 }
@@ -23,28 +32,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  text-align: center;
   
-  @include tablet {
-    margin: -120px 0 0 -203px;
-  }
+    @include tablet {
+      margin: -120px 0 0 -203px;
+    }
 
-   :first-child {
-    font-size: $font-size-md;
-    font-weight: 300; 
-    line-height: 1.1;       
   }
 
   .main-heading {
-    font-family: $stack-lobster-cursive;
     margin-top: 0;
     margin-bottom: -.5rem;
-    font-size: $font-title-md;
-    font-weight: 700;
-
-    @include tablet{
-      font-size: $font-title-lg;
-    }
   }
 
   .title-rule {
@@ -54,14 +51,3 @@
     margin-right: auto;
   }
 
-  .sub-heading {
-    color: $text-sub-heading;
-    font-size: $font-size-xsml;
-    font-weight: 300;
-    letter-spacing: 2px;
-
-    @include tablet {
-      font-size: 1rem;
-    }
-  }
-}
