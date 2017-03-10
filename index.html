@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -36,7 +36,7 @@
             <span>Hello!<br /> My Name is</span>
             <h1 class="main-heading"> Nicholas D'Amico</h1>
             <img class="title-rule" src="assets/images/icons/title-rule.svg" alt="" />
-            <span class="sub-heading">Techdegree Graduate | Front End Developer</span></h1>
+            <h2><span class="<!-- sub-heading -->">Techdegree Graduate | Front End Developer</span></h2>
           </div>
           <!-- End/ of Heading Container -->
 
@@ -192,7 +192,7 @@
             <div class="portfolio-item">
               <img src="assets/images/hobbies.jpg" alt="" />
               <h4 class="portfolio-subtitle">Registration Form</h4>
-              <button class="btn btn-green">Learn More</button>
+              <button data-get-id="project-1" class="btn btn-green">Learn More</button>
             </div>
           </div>
 
@@ -200,7 +200,7 @@
             <div class="portfolio-item">
               <img src="assets/images/hobbies.jpg" alt="" />
               <h4 class="portfolio-subtitle">Photo Gallery</h4>
-              <button class="btn btn-green">Learn More</button>
+              <button data-get-id="project-2" class="btn btn-green">Learn More</button>
             </div>
           </div>
         
@@ -208,7 +208,7 @@
             <div class="portfolio-item">
               <img src="assets/images/hobbies.jpg" alt="" />
               <h4 class="portfolio-subtitle">Interactive Video</h4>
-              <button class="btn btn-green">Learn More</button>
+              <button data-get-id="project-3" class="btn btn-green">Learn More</button>
             </div>
           </div>
 
@@ -216,7 +216,7 @@
             <div class="portfolio-item">
               <img src="assets/images/hobbies.jpg" alt="" />
               <h4 class="portfolio-subtitle">Web App Dashboard</h4>
-              <button class="btn btn-green">Learn More</button>
+              <button data-get-id="project-4" class="btn btn-green">Learn More</button>
             </div>
           </div>
 
@@ -224,7 +224,7 @@
             <div class="portfolio-item">
               <img src="assets/images/hobbies.jpg" alt="" />
               <h4 class="portfolio-subtitle">API Gallery</h4>
-              <button class="btn btn-green">Learn More</button>
+              <button data-get-id="project-5" class="btn btn-green">Learn More</button>
             </div>
           </div>
 
@@ -232,7 +232,7 @@
             <div class="portfolio-item">
               <img src="assets/images/hobbies.jpg" alt="" />
               <h4 class="portfolio-subtitle">Site Optimization</h4>
-              <button class="btn btn-green">Learn More</button>
+              <button data-get-id="project-6" class="btn btn-green">Learn More</button>
             </div>
           </div>
 
@@ -256,10 +256,36 @@
       </section>
       <!-- End/ of #contact-section -->
 
+      <div id="modal">
+        <div class="modal-inner">
+        <div class="inner-wrapper">
+          <div id="modal-content">
+
+            <h3 class="section-title">Project Title</h3>
+
+            <img class="modal-img" src="assets/images/education.jpg" alt="" />
+
+            <h4 class="modal-proj-title">Project Description</h4>
+            <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque molestie fringilla. Cras egestas lectus sed magna tristique tempor. Phasellus vel arcu eu neque rutrum vestibulum auctor quis felis. Nullam hendrerit urna nec efficitur suscipit. Maecenas vel nisl viverra, lacinia lorem at, pharetra dui. Integer erat mi, blandit in urna quis, suscipit condimentum dolor. Duis semper elit vel dui aliquam cursus. 
+            </p>
+
+            <p class="proj-description">Phasellus nisl nisl, venenatis non convallis id, mollis at risus. In laoreet lacus quis risus lobortis, ut pretium erat aliquet. 
+            </p>
+
+            <div class="btn-container">
+              <button class="btn btn-1of2-layout btn-green">View Live</button>
+              <button class="btn btn-2of2-layout btn-git">Github</button>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
      
 
     <!-- SCRIPTS -->
-    <script src="assets/scripts/modal-window.js"></script>
+    <!-- <script src="assets/scripts/modal-dom.js"></script> -->
+    <script src="assets/scripts/app.js"></script>
 
   </body>
 </html>

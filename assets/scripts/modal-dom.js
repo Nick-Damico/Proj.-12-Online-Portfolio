@@ -13,7 +13,7 @@ var modal = (function () {
 		//	Modal Content
 		var elContent = document.createElement("div");
 			//	Add classes
-			elContent.setAttribute("class", "modal-content");
+			elContent.setAttribute("id", "modal-content");
 
 		//	Modal Wrapper	
 		var modalWrapper = document.createElement("div");

@@ -9,32 +9,36 @@
   border-top: .5rem solid $outer-space;
   height: 400px;
   position: relative;  
-  min-height: 550px;
+  min-height: 95vh;
+
+  //////////////////////////
+  //  Depricated
+  //////////////////////////
   
-  @include tablet{
-    min-height: 550px;  
-    // padding-left: 20px;
-    // padding-right: 20px;
-  }
+  // @include tablet{
+  //   min-height: 550px;  
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
 
-  @include lg-devices {
-    min-height: 700px;
-  }
+  // @include lg-devices {
+  //   min-height: 700px;
+  // }
 
-  @include wide-devices {
-    min-height: 850px;
-  }
+  // @include wide-devices {
+  //   min-height: 850px;
+  // }
   
 }
 
 .intro-header {
-  margin: -89px 0 0 -158px;
+  margin: -89px 0 0 -156px;
   position: absolute;
   top: 50%;
   left: 50%;
   
     @include tablet {
-      margin: -120px 0 0 -203px;
+      margin: -120px 0 0 -201px;
     }
 
   }

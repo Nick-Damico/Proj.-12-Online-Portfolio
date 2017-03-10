@@ -420,6 +420,12 @@ body {
   background-image: linear-gradient(to right, rgba(0, 212, 255, 0.25), rgba(0, 212, 255, 0.25) 20px, transparent 20px, transparent calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px + 20px), transparent calc(25% - 25px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px + 20px), transparent calc(50% - 30px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px + 20px), transparent calc(75% - 35px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100%));
   transition: width 1s ease; }
 
+body.modal-open {
+  overflow-y: hidden; }
+
+body.modal-open section {
+  filter: blur(3px); }
+
 a {
   display: block;
   text-decoration: none; }
@@ -470,29 +476,20 @@ img {
   border-top: 0.5rem solid #2c353e;
   height: 400px;
   position: relative;
-  min-height: 550px; }
+  min-height: 95vh; }
   #main-header::after {
     clear: both;
     content: "";
     display: block; }
-  @media (min-width: 499px) {
-    #main-header {
-      min-height: 550px; } }
-  @media (min-width: 699px) {
-    #main-header {
-      min-height: 700px; } }
-  @media (min-width: 1024px) {
-    #main-header {
-      min-height: 850px; } }
 
 .intro-header {
-  margin: -89px 0 0 -158px;
+  margin: -89px 0 0 -156px;
   position: absolute;
   top: 50%;
   left: 50%; }
   @media (min-width: 499px) {
     .intro-header {
-      margin: -120px 0 0 -203px; } }
+      margin: -120px 0 0 -201px; } }
 
 .main-heading {
   margin-top: 0;
@@ -573,12 +570,12 @@ img {
       #main-nav #nav-icon {
         display: none; } }
 
-#about-me, #skills-section, #portfolio-section, #contact-section, #modal {
+#about-me, #skills-section, #portfolio-section, #contact-section, #modal .modal-inner {
   background: #313e5c;
   position: relative;
   padding-bottom: 3rem;
   transition: width .8s ease-out; }
-  #about-me::after, #skills-section::after, #portfolio-section::after, #contact-section::after, #modal::after {
+  #about-me::after, #skills-section::after, #portfolio-section::after, #contact-section::after, #modal .modal-inner::after {
     clear: both;
     content: "";
     display: block; }
@@ -800,7 +797,6 @@ img {
 .intro-header {
   text-align: center; }
   .intro-header :first-child {
-    font-size: 1.375rem;
     font-weight: 300;
     line-height: 1.1; }
 
@@ -812,17 +808,18 @@ img {
     .main-heading {
       font-size: 3rem; } }
 
-.sub-heading {
+h2 {
+  margin-top: 4px;
   color: #fefe77;
-  font-size: 0.75rem;
+  font-size: .725rem;
   font-weight: 300;
   letter-spacing: 2px; }
   @media (min-width: 499px) {
-    .sub-heading {
+    h2 {
       font-size: 1rem; } }
 
 /* --	ABOUT  -- */
-#about-me, #skills-section, #portfolio-section, #contact-section, #modal {
+#about-me, #skills-section, #portfolio-section, #contact-section, #modal .modal-inner {
   color: #fafafa;
   text-align: center; }
 
@@ -966,28 +963,42 @@ img {
   padding: 0; }
 
 #modal {
-  background: #2c353e;
+  display: none;
+  border-radius: 12px;
+  position: fixed;
   z-index: 1000;
-  text-align: left; }
+  left: 5%;
+  top: 2.5%;
+  width: 90%;
+  height: 90%;
+  overflow: auto; }
+  #modal .modal-inner {
+    background: rgba(44, 53, 62, 0.9); }
   #modal .section-title {
     border-bottom: 2px solid #fafafa;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     margin-left: 0;
     padding: 1rem;
     text-align: center;
     width: 100%; }
-  #modal .modal-content {
+  #modal #modal-content {
     width: calc(100% - 40px);
     float: left;
-    margin-left: 20px; }
-    #modal .modal-content .modal-proj-title {
+    margin-left: 20px;
+    text-align: left; }
+    #modal #modal-content .modal-img {
+      border: 2px solid #288ada;
+      padding: 4px; }
+    #modal #modal-content .modal-proj-title {
       font-size: 1.75rem;
       font-family: "Lobster Two", cursive;
-      text-align: left; }
-    #modal .modal-content .proj-description {
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    #modal #modal-content .proj-description {
       text-align: left;
       margin-bottom: 1rem; }
-      #modal .modal-content .proj-description:nth-of-type(2) {
+      #modal #modal-content .proj-description:nth-of-type(2) {
         margin-bottom: 3rem; }
 
 /*# sourceMappingURL=application.css.map */

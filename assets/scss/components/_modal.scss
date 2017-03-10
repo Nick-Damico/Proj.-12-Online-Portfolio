@@ -1,24 +1,40 @@
 #modal {
-	@extend #about-me;
-	background: $modal-bg;
-	z-index: 1000;
-	text-align: left;
+  display: none;
+  border-radius: 12px;
+  position: fixed;
+  z-index: 1000;
+  left: 5%;
+  top: 2.5%;
+  width: 90%;
+  height: 90%;
+  overflow: auto;
 
+	.modal-inner {
+		@extend #about-me;
+		background: rgba($outer-space, .90);
+	}
 	.section-title {		
 		border-bottom: 2px solid $white;		
-		margin-bottom: 3rem;
+		margin-bottom: 1.5rem;
 		margin-left: 0;
 		padding: 1rem;
 		text-align: center;
 		width: 100%;
 	}
 
-	.modal-content {
+	#modal-content {
 		@include grid-column;
+		text-align: left;
+		.modal-img {
+			border: 2px solid $curious-blue;
+			padding: 4px;
+		}
 		.modal-proj-title {
 			font-size: $modal-proj-title-size;
 			font-family: $stack-lobster-cursive;
 			text-align: left;
+			margin-top: 10px;
+			margin-bottom: 10px;			
 		}
 
 		.proj-description {

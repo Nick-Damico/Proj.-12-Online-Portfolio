@@ -7,7 +7,6 @@
 	text-align: center;
 
 	:first-child {
-		font-size: $font-size-md;
     	font-weight: 300; 
     	line-height: 1.1;     
 	}
@@ -23,9 +22,10 @@
     }
 }
 
-.sub-heading {
+h2 {
+	margin-top: 4px;
 	color: $text-sub-heading;
-    font-size: $font-size-xsml;
+    font-size: .725rem;
     font-weight: 300;
     letter-spacing: 2px;
 

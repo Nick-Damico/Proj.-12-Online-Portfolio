@@ -14,6 +14,13 @@ body {
    transition: width 1s ease;
 }
 
+body.modal-open {
+  overflow-y: hidden;
+}
+body.modal-open section {
+  filter: blur(3px);
+}
+
 a {
     display: block;
     text-decoration: none;
