@@ -52,7 +52,7 @@ h2 {
 	font-weight: 300;
 
 	@include lg-devices {
-		font-size: $about-paragraph;
+		font-size: 1.2rem;
 	}
 
 }
@@ -90,6 +90,14 @@ h2 {
 		> span {
 			color: $text-about-subheading;
 			font-weight: 400;
+		}
+	}
+
+	.techdegree-intro {
+		@include lg-devices {
+			@include grid-column(8);
+			@include grid-push(2);
+			margin-bottom: 2rem;
 		}
 	}
 

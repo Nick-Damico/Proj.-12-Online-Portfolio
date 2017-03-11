@@ -12,4 +12,24 @@
 	p {
 		display: block;
 	}
+
+	.contact-info {
+		@include grid-column;
+		margin-top: 2%;
+		font-family: $font-base;
+		font-weight: 300;
+
+		span {
+			display: block;
+			font-size: 1.25rem;
+
+			&:first-of-type {
+				margin-bottom: 1rem;
+			}
+		}
+
+		a[href^="mailto:"] {
+			color: $white;
+		}
+	}
 }

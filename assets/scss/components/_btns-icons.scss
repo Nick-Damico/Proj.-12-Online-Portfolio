@@ -22,6 +22,7 @@
 	color: $white;
 	font-size: $btn-text-sml;
 	min-width: 100px;
+	text-align: center;
 	transition: background .8s ease-out;
 }
 
@@ -103,3 +104,19 @@
 	height: 25px;
 	padding: 0;
 }
+
+////////////////////////////
+//	Modal Close Btn.
+///////////////////////////
+
+
+
+@keyframes grow {
+  50% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(.8);
+  }
+}
+

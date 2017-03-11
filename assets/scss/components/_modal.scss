@@ -7,12 +7,13 @@
   top: 2.5%;
   width: 90%;
   height: 90%;
-  overflow: auto;
+  overflow-y: auto;
 
 	.modal-inner {
 		@extend #about-me;
-		background: rgba($outer-space, .90);
+		background: rgba($outer-space, .90);		
 	}
+
 	.section-title {		
 		border-bottom: 2px solid $white;		
 		margin-bottom: 1.5rem;
@@ -26,24 +27,70 @@
 		@include grid-column;
 		text-align: left;
 		.modal-img {
+			
 			border: 2px solid $curious-blue;
 			padding: 4px;
+
+			@include lg-devices {
+				@include grid-column(4);
+			}
 		}
+
+		.tech {
+			@include grid-column;
+
+			@include lg-devices {
+				@include grid-column(4);
+				@include grid-push(4);	
+			}			
+		}	
+
 		.modal-proj-title {
+			@include grid-column;
 			font-size: $modal-proj-title-size;
 			font-family: $stack-lobster-cursive;
+			color: $curious-blue;
 			text-align: left;
 			margin-top: 10px;
 			margin-bottom: 10px;			
 		}
 
 		.proj-description {
+			@include grid-column;
 			text-align: left;
 			margin-bottom: 1rem;
+			font-weight: 300;
 
 			&:nth-of-type(2) {
 				margin-bottom: 3rem;
 			}
 		}
 	}
+}
+
+ .modal-close {
+  border: none;
+  background: none;
+  position: absolute;
+  right: .5em;
+  top: .35em;
+  width: 2rem;
+  height: 2rem;
+  /* 2em */
+}
+
+
+.modal-close:hover {
+  -webkit-animation: grow .4s ease-out;
+          animation: grow .4s ease-out;
+}
+
+.modal-close {
+  color: #c2c6c7;
+}
+
+ .modal-close:hover {
+  cursor: pointer;
+  outline: none;
+  
 }

@@ -476,7 +476,7 @@ img {
   border-top: 0.5rem solid #2c353e;
   height: 400px;
   position: relative;
-  min-height: 95vh; }
+  min-height: 60vh; }
   #main-header::after {
     clear: both;
     content: "";
@@ -518,16 +518,16 @@ img {
     height: 250px;
     position: absolute;
     top: -68px;
-    left: -124px; }
+    left: -124px;
+    z-index: 980; }
   #main-nav .nav-links {
     display: none;
-    width: calc(100% - 40px);
-    float: left;
-    margin-left: 20px;
     background: rgba(44, 53, 62, 0.85); }
     @media (min-width: 499px) {
       #main-nav .nav-links {
-        display: initial;
+        width: calc(100% - 40px);
+        float: left;
+        margin-left: 20px;
         background: none;
         display: flex;
         justify-content: flex-end;
@@ -537,35 +537,36 @@ img {
         background: #2c353e; }
         #main-nav .nav-links li.selected > a {
           color: #fefe77; } }
-    #main-nav .nav-links li {
-      margin-bottom: 4px;
-      text-align: center;
-      text-transform: uppercase;
-      transition: all .6s ease-out; }
+  #main-nav li {
+    margin-bottom: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .6s ease-out; }
+    @media (min-width: 499px) {
+      #main-nav li {
+        margin-bottom: 0;
+        margin-right: .25rem;
+        margin-left: .25rem;
+        padding: .625rem .5rem; }
+        #main-nav li:hover {
+          background: #2c353e; }
+          #main-nav li:hover > a {
+            color: #fefe77; } }
+    #main-nav li a {
+      color: #fafafa;
+      font-size: 0.75rem;
+      padding: 8px 10px; }
       @media (min-width: 499px) {
-        #main-nav .nav-links li {
-          margin-bottom: 0;
-          margin-right: .25rem;
-          margin-left: .25rem;
-          padding: .625rem .5rem; }
-          #main-nav .nav-links li:hover {
-            background: #2c353e; }
-            #main-nav .nav-links li:hover > a {
-              color: #fefe77; } }
-      #main-nav .nav-links li a {
-        color: #fafafa;
-        font-size: 0.75rem;
-        padding: 8px 10px; }
-        @media (min-width: 499px) {
-          #main-nav .nav-links li a {
-            color: #2c353e;
-            padding: 0; } }
+        #main-nav li a {
+          color: #2c353e;
+          padding: 0; } }
   #main-nav #nav-icon {
     width: 28px;
     height: 28px;
     position: absolute;
     right: 10px;
-    top: 10px; }
+    top: 10px;
+    z-index: 985; }
     @media (min-width: 499px) {
       #main-nav #nav-icon {
         display: none; } }
@@ -712,9 +713,6 @@ img {
       padding-top: 1rem;
       padding-bottom: 1rem;
       margin: 0; }
-    .skills-block-container .skills-block .points,
-    .skills-block-container .skills-block .total {
-      font-family: "Lobster Two", cursive; }
     .skills-block-container .skills-block .points {
       float: right; }
   .skills-block-container ul.skills-list {
@@ -786,6 +784,20 @@ img {
     color: #2c353e; }
   #contact-section p {
     display: block; }
+  #contact-section .contact-info {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+    margin-top: 2%;
+    font-family: normal 16px/1.4 "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300; }
+    #contact-section .contact-info span {
+      display: block;
+      font-size: 1.25rem; }
+      #contact-section .contact-info span:first-of-type {
+        margin-bottom: 1rem; }
+    #contact-section .contact-info a[href^="mailto:"] {
+      color: #fafafa; }
 
 /* ---- Footer---- */
 /* ---- Container ---- */
@@ -834,7 +846,7 @@ h2 {
   font-weight: 300; }
   @media (min-width: 699px) {
     .section-intro {
-      font-size: 1rem; } }
+      font-size: 1.2rem; } }
 
 .about-block-container .block-sections .about-title {
   color: #33cf89;
@@ -857,6 +869,13 @@ h2 {
     .techdegree-section .techdegree-title > span {
       color: #fefe77;
       font-weight: 400; }
+  @media (min-width: 699px) {
+    .techdegree-section .techdegree-intro {
+      width: calc(66.66667% - 33.33333px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(16.66667% - 23.33333px + 40px);
+      margin-bottom: 2rem; } }
 
 /* --	SKILLS  -- */
 /* --	PORTFOLIO  -- */
@@ -887,6 +906,7 @@ h2 {
   color: #fafafa;
   font-size: 0.75rem;
   min-width: 100px;
+  text-align: center;
   transition: background .8s ease-out; }
 
 .btn-1of2-layout {
@@ -962,6 +982,11 @@ h2 {
   height: 25px;
   padding: 0; }
 
+@keyframes grow {
+  50% {
+    transform: scale(1.2); }
+  80% {
+    transform: scale(0.8); } }
 #modal {
   display: none;
   border-radius: 12px;
@@ -971,7 +996,7 @@ h2 {
   top: 2.5%;
   width: 90%;
   height: 90%;
-  overflow: auto; }
+  overflow-y: auto; }
   #modal .modal-inner {
     background: rgba(44, 53, 62, 0.9); }
   #modal .section-title {
@@ -989,16 +1014,60 @@ h2 {
     #modal #modal-content .modal-img {
       border: 2px solid #288ada;
       padding: 4px; }
+      @media (min-width: 699px) {
+        #modal #modal-content .modal-img {
+          width: calc(33.33333% - 26.66667px);
+          float: left;
+          margin-left: 20px; } }
+    #modal #modal-content .tech {
+      width: calc(100% - 40px);
+      float: left;
+      margin-left: 20px; }
+      @media (min-width: 699px) {
+        #modal #modal-content .tech {
+          width: calc(33.33333% - 26.66667px);
+          float: left;
+          margin-left: 20px;
+          margin-left: calc(33.33333% - 26.66667px + 40px); } }
     #modal #modal-content .modal-proj-title {
+      width: calc(100% - 40px);
+      float: left;
+      margin-left: 20px;
       font-size: 1.75rem;
       font-family: "Lobster Two", cursive;
+      color: #288ada;
       text-align: left;
       margin-top: 10px;
       margin-bottom: 10px; }
     #modal #modal-content .proj-description {
+      width: calc(100% - 40px);
+      float: left;
+      margin-left: 20px;
       text-align: left;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-weight: 300; }
       #modal #modal-content .proj-description:nth-of-type(2) {
         margin-bottom: 3rem; }
+
+.modal-close {
+  border: none;
+  background: none;
+  position: absolute;
+  right: .5em;
+  top: .35em;
+  width: 2rem;
+  height: 2rem;
+  /* 2em */ }
+
+.modal-close:hover {
+  -webkit-animation: grow .4s ease-out;
+  animation: grow .4s ease-out; }
+
+.modal-close {
+  color: #c2c6c7; }
+
+.modal-close:hover {
+  cursor: pointer;
+  outline: none; }
 
 /*# sourceMappingURL=application.css.map */
