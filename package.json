@@ -1,0 +1,30 @@
+{
+  "name": "online-portfolio",
+  "version": "1.0.0",
+  "description": "Techdegree Proj. 12 Online Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nick-Damico/Proj.-12-Online-Portfolio.git"
+  },
+  "keywords": [
+    "techdegree",
+    "treehouse",
+    "online",
+    "portfolio",
+    "velocity.js",
+    "css",
+    "HTML5",
+    "javaScript",
+    "AJAX"
+  ],
+  "author": "Nicholas Damico nickalan82@icloud.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nick-Damico/Proj.-12-Online-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Nick-Damico/Proj.-12-Online-Portfolio#readme"
+}
