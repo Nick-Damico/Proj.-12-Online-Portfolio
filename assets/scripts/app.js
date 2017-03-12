@@ -8,13 +8,13 @@
 	var navIcon = document.getElementById("nav-icon");
 	var ul = document.getElementsByClassName("nav-links")[0];
 
-	//	Loop to add EventListener to node list
-	function addEventListenerList(list, event, fn) {
-    	for (var i = 0, len = list.length; i < len; i++) {
-    	    list[i].addEventListener(event, fn, false);
-    	}
-	}
 
+
+	///////////////////////////////////////////////////////////
+	//	FUNTIONS FOR NAVIGATION
+	///////////////////////////////////////////////////////////
+
+	//	Animates Navigation on 'click' of hamburger icon
 	function navDropDwn () {		
 		if(ul.style.display !== 'block'){
 			Velocity(ul, "slideDown", 800);	
@@ -25,6 +25,23 @@
 		}	
 	}
 
+	//	FIXES NAVIGATION DISPLAY PROP VALUE BUG
+	//	CLICKING ON HAMBURGER NAV CAN CAUSE DISPLAY ISSUES ON BROWSER RESIZE
+	function correctNavDisplay() {
+		//	Get Current Viewport Width
+		var isWidth = browserWidth(); 
+		//	Get ul.nav-icons display value
+		var display = ul.style.display;
+		//	This corrects display value for drop down navigation
+		if(isWidth >= 499) {
+			ul.style.display = 'flex';
+		} else if (display = 'flex') {
+			ul.style.display = 'none';
+			navIcon.setAttribute("src", "assets/images/icons/nav-closed.svg");
+		}
+	}
+
+	//	Gets Current Width of viewport
 	function browserWidth() {
 		var intViewportWidth = window.innerWidth;
 		return intViewportWidth;
@@ -32,9 +49,12 @@
 
 
 
+	///////////////////////////////////////////////////////////
+	//	XMLHttpRequest Funtions
+	///////////////////////////////////////////////////////////
 	
 	//	AJAX Request for Portfolio Proj. HTML
-	function request(id) {
+	function portfolioRequest(id) {
 		//	Create XMLHttpRequest object
 		var xhr = new XMLHttpRequest();
 		//	Prepare Request
@@ -52,10 +72,48 @@
 			modalContent.innerHTML = el;	
 			addEventListenerList(closeBtn, "click", modalClose);		
 		}
-
 		//	Send Prepared Request
 		xhr.send(null);
 	}
+
+	//	
+	function treehouseRequest() {
+		var xhr = new XMLHttpRequest();
+		//	Request Profile Info from Treehouse.com
+		xhr.open('GET', 'https://teamtreehouse.com/nicholasdamico.json', true);
+		xhr.onload = function() {
+			//	Get profile Response (object);
+			var content = JSON.parse(xhr.responseText);
+			//	Store Profile Skills and Points as Object
+			var obj = content.points;
+			buildSkillPoints(obj);
+		}
+		xhr.send(null);
+	}
+
+	function buildSkillPoints(obj) {
+		var ul = document.getElementsByClassName("skills-list")[0];
+		var item = '';
+		var li = '';
+
+		for(var prop in obj) {				
+			 if(prop !== 'total' && obj[prop] !== 0) {
+			 	item += '<li>';
+			 	item += prop + ' <i class="points">';
+			 	item += obj[prop] + '</i></li>';
+			 } else if( prop === 'total') {
+			 	document.getElementsByClassName("total")[0].innerHTML = obj[prop];
+			 }
+		}
+		ul.innerHTML = item;
+	}
+
+
+
+	///////////////////////////////////////////////////////////
+	//	MODAL LIGHTBOX FUNCTIONS
+	///////////////////////////////////////////////////////////
+
 
 	//	Call Modal 'Open' State
 	function modalOpen(e) {
@@ -63,12 +121,10 @@
 		var id = this.getAttribute("data-get-id");
 		console.log(id);
 		//	AJAX GET Request function
-		request(id);
+		portfolioRequest(id);
 		//	Add Velocity Animation
 		Velocity(modal, "fadeIn", 1000);
 		elBody.classList.toggle("modal-open");
-		
-		
 	}
 
 	//	Define close() method
@@ -80,26 +136,36 @@
 		//	Remove Content from modal
 	}
 
-	function correctNavDisplay() {
-		var isWidth = browserWidth(); 
-		var display = ul.style.display;
-		if(isWidth >= 499) {
-			ul.style.display = 'flex';
-		} else if (display = 'flex') {
-			ul.style.display = 'none';
-			navIcon.setAttribute("src", "assets/images/icons/nav-closed.svg");
-		}
+
+
+	///////////////////////////////////////////////////////////
+	//	EVENT HANDLERS
+	///////////////////////////////////////////////////////////
+
+	//	Loop to add EventListener to node list
+	function addEventListenerList(list, event, fn) {
+    	for (var i = 0, len = list.length; i < len; i++) {
+    	    list[i].addEventListener(event, fn, false);
+    	}
 	}
 
 	//	Attach EventListener to Proj Btns
 	addEventListenerList(projBtn, "click", modalOpen);
 	
+	//	Drop-down navigation 'hamburger' 'click' event
     navIcon.addEventListener("click", navDropDwn, false);
 
+    //	Window Resize Event
+    	//	Fixes navigation display bug from drop-down nav
 	window.onresize = function () {
 		correctNavDisplay();
 	}
-	
 
+	///////////////////////////////////////////////////////////
+	//	Function Calls
+	///////////////////////////////////////////////////////////
+
+
+	treehouseRequest();
 
 
