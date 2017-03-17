@@ -839,7 +839,7 @@ img {
   background-color: #ec6f60;
   background-size: contain;
   background-position: center 36px;
-  min-height: 560px; }
+  padding-bottom: 1.5rem; }
   #contact-section .contact-title {
     color: #2c353e; }
   #contact-section p {
@@ -1100,6 +1100,9 @@ h2 {
     padding: 1rem;
     overflow: auto;
     height: 100%; }
+    @media (min-width: 699px) {
+      #modal .modal-inner {
+        padding: 1rem; } }
   #modal .section-title {
     border-bottom: 2px solid #fafafa;
     margin-bottom: 1.5rem;

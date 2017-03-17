@@ -4,7 +4,8 @@
 	background-color: $contact-bg;
 	background-size: contain;
 	background-position: center 36px;
-	min-height: 560px;
+	// min-height: 560px;
+	padding-bottom: 1.5rem;
 	.contact-title {
 		color: $contact-title-color;
 	}

@@ -15,6 +15,9 @@
 		padding: 1rem;	
 		overflow: auto;
 		height: 100%;
+		@include lg-devices {
+			padding: 1rem;
+		}
 	}
 
 	.section-title {		
