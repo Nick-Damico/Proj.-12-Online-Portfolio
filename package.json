@@ -26,5 +26,17 @@
   "bugs": {
     "url": "https://github.com/Nick-Damico/Proj.-12-Online-Portfolio/issues"
   },
-  "homepage": "https://github.com/Nick-Damico/Proj.-12-Online-Portfolio#readme"
+  "homepage": "https://github.com/Nick-Damico/Proj.-12-Online-Portfolio#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^2.7.5",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.1.0"
+  }
 }
