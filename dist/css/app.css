@@ -587,7 +587,9 @@ img {
     position: absolute;
     right: 10px;
     top: 10px;
-    z-index: 985; }
+    z-index: 985;
+    padding: 8px;
+    box-sizing: content-box; }
     @media (min-width: 499px) {
       #main-nav #nav-icon {
         display: none; } }
