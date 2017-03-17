@@ -26,6 +26,12 @@
 		}
 	}
 
+	hr.style14 { 
+	  border: 0; 
+	  height: 1px; 
+	  background-image: -webkit-linear-gradient(left, #259f69, #ec6f60, #259f69);
+	}
+
 	.skills-block {
 		background: darken($shamrock, 8%);		
 		border-radius: 1rem;
@@ -80,7 +86,11 @@
 		.skills-list li {
 			border-bottom: dotted;
 			border-color: darken($shamrock, 20%);
-			padding-bottom: 4px;
+		    background: #288ada;
+    	    color: white;
+    		padding: 2px 8px;
+    	    border-radius: 8px;
+ 		    margin-bottom: 4px;
 		}
 
 	ul.tech {

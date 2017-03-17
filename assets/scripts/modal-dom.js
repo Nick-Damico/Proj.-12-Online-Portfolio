@@ -45,10 +45,10 @@ var modal = (function () {
 			btnContainer.setAttribute("class", "btn-container");
 
 		//	Btn
-		var elBtn = document.createElement("button");
+		var elBtn = document.createElement("a");
 			elBtn.setAttribute("class", "btn btn-1of2-layout btn-green");
 
-		var elBtn2 = document.createElement("button");
+		var elBtn2 = document.createElement("a");
 			elBtn2.setAttribute("class", "btn btn-2of2-layout btn-git");
 
 

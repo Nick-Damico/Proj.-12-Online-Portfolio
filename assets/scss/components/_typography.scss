@@ -69,11 +69,11 @@ h2 {
 		}
 
 		 p {
-			font-size: $about-paragraph;
+			font-size: .9rem;
 			text-align: left;
 
 			@include lg-devices {
-				font-size: $about-paragraph-xs;
+				// font-size: $about-paragraph;
 			}
 		}
 	}

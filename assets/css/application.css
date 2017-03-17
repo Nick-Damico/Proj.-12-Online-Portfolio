@@ -449,6 +449,11 @@ img {
   padding: .825rem .25rem;
   border-radius: 8px; }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /****************************************
   Containers
 /***************************************/
@@ -471,16 +476,19 @@ img {
   MAIN-HEADER
 /***************************************/
 #main-header {
-  background: linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../images/bg-2.jpg") no-repeat center;
+  background: linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../assets/images/bg-2.jpg") no-repeat center;
   background-size: cover;
   border-top: 0.5rem solid #2c353e;
   height: 400px;
   position: relative;
-  min-height: 60vh; }
+  min-height: 70vh; }
   #main-header::after {
     clear: both;
     content: "";
     display: block; }
+  @media (min-width: 1024px) {
+    #main-header {
+      min-height: 80vh; } }
 
 .intro-header {
   margin: -89px 0 0 -156px;
@@ -510,7 +518,7 @@ img {
   margin: 0;
   width: 100%; }
   #main-nav .main-logo {
-    background: url("../images/icons/logo.svg") no-repeat center;
+    background: url("../assets/images/icons/logo.svg") no-repeat center;
     color: #fafafa;
     text-indent: -9999px;
     overflow: hidden;
@@ -535,23 +543,29 @@ img {
     @media (min-width: 499px) {
       #main-nav .nav-links li.selected {
         background: #2c353e; }
-        #main-nav .nav-links li.selected > a {
+        #main-nav .nav-links li.selected a {
           color: #fefe77; } }
   #main-nav li {
     margin-bottom: 8px;
     text-align: center;
     text-transform: uppercase;
     transition: all .6s ease-out; }
+    #main-nav li:hover {
+      background: #fefe77; }
+      #main-nav li:hover > a {
+        color: #2c353e; }
     @media (min-width: 499px) {
       #main-nav li {
         margin-bottom: 0;
         margin-right: .25rem;
         margin-left: .25rem;
-        padding: .625rem .5rem; }
-        #main-nav li:hover {
-          background: #2c353e; }
-          #main-nav li:hover > a {
-            color: #fefe77; } }
+        padding: .625rem .5rem; } }
+  @media (min-width: 499px) and (min-width: 499px) {
+    #main-nav li:hover {
+      background: #2c353e; }
+      #main-nav li:hover > a {
+        color: #fefe77; } }
+
     #main-nav li a {
       color: #fafafa;
       font-size: 0.75rem;
@@ -652,7 +666,7 @@ img {
   margin-bottom: 90px; }
 
 .techdegree-section::before {
-  content: url(../images/icons/badge-icon.svg);
+  content: url(../assets/images/icons/badge-icon.svg);
   display: block;
   width: 80px;
   height: 80px;
@@ -663,6 +677,10 @@ img {
     .techdegree-section::before {
       width: 130px;
       height: 130px; } }
+
+@media (min-width: 699px) {
+  div.newDiv {
+    display: flex; } }
 
 #skills-section {
   background: #33cf89; }
@@ -684,6 +702,10 @@ img {
       color: #2c353e; }
     .skills-block-container .skills-inner .total {
       font-size: 1.25rem; }
+  .skills-block-container hr.style14 {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #259f69, #ec6f60, #259f69); }
   .skills-block-container .skills-block {
     background: #29b073;
     border-radius: 1rem;
@@ -723,7 +745,11 @@ img {
   .skills-block-container .skills-list li {
     border-bottom: dotted;
     border-color: #1e7e53;
-    padding-bottom: 4px; }
+    background: #288ada;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin-bottom: 4px; }
   .skills-block-container ul.tech {
     padding: 0;
     text-align: center; }
@@ -766,8 +792,17 @@ img {
     margin-left: auto;
     margin-right: auto;
     min-height: 280px; }
+    #portfolio-section .portfolio-item > img {
+      height: 150px;
+      width: 260px; }
   #portfolio-section .section-intro {
-    color: #33cf89; }
+    color: #2cbc7c; }
+    @media (min-width: 699px) {
+      #portfolio-section .section-intro {
+        width: calc(66.66667% - 33.33333px);
+        float: left;
+        margin-left: 20px;
+        margin-left: calc(16.66667% - 23.33333px + 40px); } }
   #portfolio-section .portfolio-subtitle {
     color: #fafafa;
     font-size: 1.5rem;
@@ -775,11 +810,11 @@ img {
     margin: 5px 0 8px 0; }
 
 #contact-section {
-  background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../images/contact-img.png") no-repeat center;
+  background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../assets/images/contact-img.jpg") no-repeat center;
   background-color: #ec6f60;
   background-size: contain;
-  background-position-y: 38px;
-  min-height: 550px; }
+  background-position: center 36px;
+  min-height: 560px; }
   #contact-section .contact-title {
     color: #2c353e; }
   #contact-section p {
@@ -789,7 +824,7 @@ img {
     float: left;
     margin-left: 20px;
     margin-top: 2%;
-    font-family: normal 16px/1.4 "Open Sans", Helvetica, Arial, sans-serif;
+    font: normal 16px/1.4 "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300; }
     #contact-section .contact-info span {
       display: block;
@@ -798,6 +833,24 @@ img {
         margin-bottom: 1rem; }
     #contact-section .contact-info a[href^="mailto:"] {
       color: #fafafa; }
+  #contact-section .social-container {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
+    #contact-section .social-container li {
+      display: inline; }
+      #contact-section .social-container li a {
+        display: inline-block;
+        padding: 5px;
+        margin-left: 3px;
+        margin-right: 3px; }
+    #contact-section .social-container li img {
+      width: 36px;
+      opacity: .6;
+      transition: transform .8s ease-out; }
+      #contact-section .social-container li img:hover {
+        opacity: 1;
+        transform: scale(1.1); }
 
 /* ---- Footer---- */
 /* ---- Container ---- */
@@ -854,11 +907,8 @@ h2 {
   font-weight: 300;
   text-align: center; }
 .about-block-container .block-sections p {
-  font-size: 1rem;
+  font-size: .9rem;
   text-align: left; }
-  @media (min-width: 699px) {
-    .about-block-container .block-sections p {
-      font-size: 0.75rem; } }
 
 .techdegree-section {
   text-align: center; }
@@ -888,7 +938,8 @@ h2 {
   width: 80px;
   height: 80px;
   margin-top: -40px;
-  position: relative; }
+  position: relative;
+  transition: width .6s ease-out, height .6s ease-out; }
   @media (min-width: 499px) {
     .about-icon,
     .skills-icon,
@@ -897,6 +948,12 @@ h2 {
       width: 100px;
       height: 100px;
       margin-top: -50px; } }
+
+@media (min-width: 699px) {
+  .about-icon {
+    width: 150px;
+    height: 150px;
+    margin-top: -72px; } }
 
 .btn {
   background: none;
@@ -998,7 +1055,10 @@ h2 {
   height: 90%;
   overflow-y: auto; }
   #modal .modal-inner {
-    background: rgba(44, 53, 62, 0.9); }
+    background: rgba(44, 53, 62, 0.9);
+    padding: 1rem;
+    overflow: auto;
+    height: 100%; }
   #modal .section-title {
     border-bottom: 2px solid #fafafa;
     margin-bottom: 1.5rem;
@@ -1016,19 +1076,27 @@ h2 {
       padding: 4px; }
       @media (min-width: 699px) {
         #modal #modal-content .modal-img {
-          width: calc(33.33333% - 26.66667px);
+          width: calc(50% - 30px);
           float: left;
           margin-left: 20px; } }
-    #modal #modal-content .tech {
+    #modal #modal-content ul.tech {
+      margin-left: 1rem; }
+    #modal #modal-content .modal-table {
       width: calc(100% - 40px);
       float: left;
       margin-left: 20px; }
       @media (min-width: 699px) {
-        #modal #modal-content .tech {
+        #modal #modal-content .modal-table {
           width: calc(33.33333% - 26.66667px);
           float: left;
           margin-left: 20px;
-          margin-left: calc(33.33333% - 26.66667px + 40px); } }
+          margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      #modal #modal-content .modal-table h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: 'Lobster Two';
+        font-size: 2rem;
+        color: #288ada; }
     #modal #modal-content .modal-proj-title {
       width: calc(100% - 40px);
       float: left;
@@ -1046,7 +1114,7 @@ h2 {
       text-align: left;
       margin-bottom: 1rem;
       font-weight: 300; }
-      #modal #modal-content .proj-description:nth-of-type(2) {
+      #modal #modal-content .proj-description:last-of-type {
         margin-bottom: 3rem; }
 
 .modal-close {

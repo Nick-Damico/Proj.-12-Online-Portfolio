@@ -49,3 +49,9 @@ img {
     border-radius: 8px;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

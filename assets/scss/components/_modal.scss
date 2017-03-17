@@ -11,7 +11,10 @@
 
 	.modal-inner {
 		@extend #about-me;
-		background: rgba($outer-space, .90);		
+		background: rgba($outer-space, .90);
+		padding: 1rem;	
+		overflow: auto;
+		height: 100%;
 	}
 
 	.section-title {		
@@ -26,22 +29,38 @@
 	#modal-content {
 		@include grid-column;
 		text-align: left;
+
+		@include tablet {
+			// margin-top: 10%;
+		}
+
 		.modal-img {
-			
 			border: 2px solid $curious-blue;
 			padding: 4px;
 
 			@include lg-devices {
-				@include grid-column(4);
+				@include grid-column(6);
 			}
 		}
 
-		.tech {
+		ul.tech {
+			margin-left: 1rem;
+		}
+
+		.modal-table {
 			@include grid-column;
 
 			@include lg-devices {
 				@include grid-column(4);
-				@include grid-push(4);	
+				@include grid-push(2);	
+			}
+
+			h4 {
+				margin-top: 0;
+    			margin-bottom: 0;
+    			font-family: 'Lobster Two';
+    			font-size: 2rem;
+    			color: #288ada;
 			}			
 		}	
 
@@ -61,7 +80,7 @@
 			margin-bottom: 1rem;
 			font-weight: 300;
 
-			&:nth-of-type(2) {
+			&:last-of-type {
 				margin-bottom: 3rem;
 			}
 		}

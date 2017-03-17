@@ -6,6 +6,8 @@
 		height: 80px;
 		margin-top: -40px;
 		position: relative;
+		transition: width .6s ease-out,
+					height .6s ease-out;
 
 		@include tablet {
 			width: 100px;
@@ -13,6 +15,14 @@
 			margin-top: -50px;
 		}
 	}
+
+.about-icon {
+	@include lg-devices {
+		width: 150px;
+		height: 150px;
+		margin-top: -72px;
+	}
+}
 
 .btn {
 	background: none;

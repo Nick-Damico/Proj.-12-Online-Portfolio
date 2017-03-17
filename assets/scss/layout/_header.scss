@@ -4,12 +4,12 @@
 
 #main-header {
   @include grid-container;
-  background: $bg-main-header,url('../images/bg-2.jpg') no-repeat center;
+  background: $bg-main-header,url('../assets/images/bg-2.jpg') no-repeat center;
   background-size: cover;
   border-top: .5rem solid $outer-space;
   height: 400px;
   position: relative;  
-  min-height: 60vh;
+  min-height: 70vh;
 
   //////////////////////////
   //  Depricated
@@ -25,9 +25,9 @@
   //   min-height: 700px;
   // }
 
-  // @include wide-devices {
-  //   min-height: 850px;
-  // }
+  @include wide-devices {
+    min-height: 80vh;
+  }
   
 }
 

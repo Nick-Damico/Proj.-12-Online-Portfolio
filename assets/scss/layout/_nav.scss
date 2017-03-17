@@ -6,7 +6,7 @@
   width: 100%;
 
   .main-logo {
-    background: url('../images/icons/logo.svg') no-repeat center;
+    background: url('../assets/images/icons/logo.svg') no-repeat center;
     color: $white;
     text-indent: -9999px;
     overflow: hidden;
@@ -18,29 +18,27 @@
     z-index: 980;
   }
 
-
-
-.nav-links {
-  display: none;
-  background: rgba($outer-space, .85);
-  
-  @include tablet {
-    @include grid-column;    
-    background: none;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: -12px;
-  }
-
-  li.selected {
+  .nav-links {
+    display: none;
+    background: rgba($outer-space, .85);
+    
     @include tablet {
-      background: $text-nav-bg-selected;
-      & > a {
-        color: $text-nav-selected;
+      @include grid-column;    
+      background: none;
+      display: flex;
+      justify-content: flex-end;
+      margin-right: -12px;
+    }
+
+    li.selected {
+      @include tablet {
+        background: $text-nav-bg-selected;
+        &  a {
+          color: $text-nav-selected;
+        }
       }
     }
   }
-}
 
 li {
  margin-bottom: 8px;
@@ -48,20 +46,27 @@ li {
  text-transform: uppercase;
  transition: all .6s ease-out;
 
+ &:hover {
+  background: $text-nav-selected;
+  > a {
+    color: $text-nav-bg-selected;
+  }
+ }
+
  @include tablet {
   margin-bottom: 0;
   margin-right: .25rem;
   margin-left: .25rem;
   padding: .625rem .5rem;
 
-  &:hover {
-    background: $text-nav-bg-selected;
-
-    > a {
-      color: $text-nav-selected;
+  &:hover { 
+    @include tablet {
+      background: $text-nav-bg-selected;
+      > a {
+        color: $text-nav-selected;
+      }
     }
-
-  }
+  }  
  }
 
  a {
