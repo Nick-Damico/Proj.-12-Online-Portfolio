@@ -480,7 +480,7 @@ img {
   border-top: 0.5rem solid #2c353e;
   height: 400px;
   position: relative;
-  min-height: 80vh; }
+  min-height: 90vh; }
   #main-header::after {
     clear: both;
     content: "";
