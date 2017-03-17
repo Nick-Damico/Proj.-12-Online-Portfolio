@@ -10,8 +10,9 @@ body {
   font: $font-base;
   background: $outer-space;
   position: relative;
-   @include grid-visual;
-   transition: width 1s ease;
+   // @include grid-visual;
+   transition: width .6s ease-out,
+               height .6s ease-out;
 }
 
 body.modal-open {

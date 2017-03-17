@@ -417,8 +417,7 @@ body {
   font: normal 16px/1.4 "Open Sans", Helvetica, Arial, sans-serif;
   background: #2c353e;
   position: relative;
-  background-image: linear-gradient(to right, rgba(0, 212, 255, 0.25), rgba(0, 212, 255, 0.25) 20px, transparent 20px, transparent calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px), rgba(0, 212, 255, 0.25) calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(8.33333% - 21.66667px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px), rgba(0, 212, 255, 0.25) calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(16.66667% - 23.33333px + 20px + 20px), transparent calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px), rgba(0, 212, 255, 0.25) calc(25% - 25px + 20px + 20px), transparent calc(25% - 25px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px), rgba(0, 212, 255, 0.25) calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(33.33333% - 26.66667px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px), rgba(0, 212, 255, 0.25) calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(41.66667% - 28.33333px + 20px + 20px), transparent calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px), rgba(0, 212, 255, 0.25) calc(50% - 30px + 20px + 20px), transparent calc(50% - 30px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px), rgba(0, 212, 255, 0.25) calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(58.33333% - 31.66667px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px), rgba(0, 212, 255, 0.25) calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(66.66667% - 33.33333px + 20px + 20px), transparent calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px), rgba(0, 212, 255, 0.25) calc(75% - 35px + 20px + 20px), transparent calc(75% - 35px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px), rgba(0, 212, 255, 0.25) calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(83.33333% - 36.66667px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px), rgba(0, 212, 255, 0.25) calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(91.66667% - 38.33333px + 20px + 20px), transparent calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100% - 20px), rgba(0, 212, 255, 0.25) calc(100%));
-  transition: width 1s ease; }
+  transition: width .6s ease-out, height .6s ease-out; }
 
 body.modal-open {
   overflow-y: hidden; }
@@ -476,12 +475,12 @@ img {
   MAIN-HEADER
 /***************************************/
 #main-header {
-  background: linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../images/bg-2.jpg") no-repeat center;
+  background: linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../assets/images/bg-2.jpg") no-repeat center;
   background-size: cover;
   border-top: 0.5rem solid #2c353e;
   height: 400px;
   position: relative;
-  min-height: 70vh; }
+  min-height: 80vh; }
   #main-header::after {
     clear: both;
     content: "";
@@ -518,7 +517,7 @@ img {
   margin: 0;
   width: 100%; }
   #main-nav .main-logo {
-    background: url("../images/icons/logo.svg") no-repeat center;
+    background: url("../assets/images/icons/logo.svg") no-repeat center;
     color: #fafafa;
     text-indent: -9999px;
     overflow: hidden;
@@ -666,7 +665,7 @@ img {
   margin-bottom: 90px; }
 
 .techdegree-section::before {
-  content: url(../images/icons/badge-icon.svg);
+  content: url(../assets/images/icons/badge-icon.svg);
   display: block;
   width: 80px;
   height: 80px;
@@ -810,7 +809,7 @@ img {
     margin: 5px 0 8px 0; }
 
 #contact-section {
-  background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../images/contact-img.jpg") no-repeat center;
+  background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../assets/images/contact-img.jpg") no-repeat center;
   background-color: #ec6f60;
   background-size: contain;
   background-position: center 36px;
