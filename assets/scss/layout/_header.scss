@@ -4,7 +4,7 @@
 
 #main-header {
   @include grid-container;
-  background: $bg-main-header,url('../assets/images/bg-2.jpg') no-repeat center;
+  background: $bg-main-header,url('../images/bg-2.jpg') no-repeat center;
   background-size: cover;
   border-top: .5rem solid $outer-space;
   height: 400px;
