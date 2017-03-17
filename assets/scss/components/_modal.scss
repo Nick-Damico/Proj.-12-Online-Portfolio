@@ -11,8 +11,7 @@
 
 	.modal-inner {
 		@extend #about-me;
-		background: rgba($outer-space, .90);
-		padding: 1rem;	
+		background: rgba($outer-space, .90);			
 		overflow: auto;
 		height: 100%;
 		@include lg-devices {

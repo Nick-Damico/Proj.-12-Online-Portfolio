@@ -1055,7 +1055,6 @@ h2 {
   overflow-y: auto; }
   #modal .modal-inner {
     background: rgba(44, 53, 62, 0.9);
-    padding: 1rem;
     overflow: auto;
     height: 100%; }
     @media (min-width: 699px) {
