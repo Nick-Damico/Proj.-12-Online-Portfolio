@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 153 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1.33333,0,0,1.33333,-563.505,-5060.94)">
-        <g transform="matrix(1,0,0,1.00958,2.33631,2628.04)">
-            <g transform="matrix(0.732405,0,0,0.732405,150.536,722.708)">
-                <g id="skills-icon">
-                    <circle cx="446.648" cy="670.628" r="68.093" style="fill:rgb(235,236,237);stroke:rgb(236,111,96);stroke-width:20.38px;"/>
-                </g>
-            </g>
-        </g>
-        <g transform="matrix(1,0,0,1.00958,2.33631,2628.04)">
-            <g id="Mail-Icon" transform="matrix(2.13877,0,0,2.11847,-638.773,-4567.15)">
-                <path d="M532.5,2737L511.5,2737C510.672,2737 510,2736.33 510,2735.5L510,2719.5C510,2718.67 510.672,2718 511.5,2718L532.5,2718C533.329,2718 534,2718.67 534,2719.5L534,2735.5C534,2736.33 533.329,2737 532.5,2737ZM531,2734L531,2722.43L522.731,2730.7C522.528,2730.91 522.261,2731.01 521.995,2731C521.729,2731.01 521.461,2730.91 521.258,2730.7L513,2722.44L513,2734L531,2734ZM529.561,2721L514.429,2721L521.995,2728.58L529.561,2721Z" style="fill:rgb(236,111,96);"/>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg viewBox="0 0 153 155" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><circle cx="446.648" cy="670.628" r="68.093" fill="#ebeced" stroke="#ec6f60" stroke-width="20.38" transform="matrix(.97654 0 0 .9859 -359.676 -584.056)"/><path d="M106.438 100.296H46.552a4.275 4.275 0 0 1-4.277-4.278V50.391a4.275 4.275 0 0 1 4.277-4.277h59.886a4.274 4.274 0 0 1 4.277 4.277v45.627a4.274 4.274 0 0 1-4.277 4.278zm-4.278-8.555V58.747L78.58 82.33a2.76 2.76 0 0 1-2.1.855 2.766 2.766 0 0 1-2.1-.855L50.83 58.775v32.966h51.33zm-4.103-37.072H54.905l21.576 21.615L98.057 54.67z" fill="#ec6f60"/></svg>
