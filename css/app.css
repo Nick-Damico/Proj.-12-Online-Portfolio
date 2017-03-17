@@ -483,7 +483,7 @@ img {
   border-top: 0.5rem solid #2c353e;
   height: 400px;
   position: relative;
-  min-height: 80vh; }
+  min-height: 90vh; }
   #main-header::after {
     clear: both;
     content: "";
@@ -1097,7 +1097,6 @@ h2 {
   overflow-y: auto; }
   #modal .modal-inner {
     background: rgba(44, 53, 62, 0.9);
-    padding: 1rem;
     overflow: auto;
     height: 100%; }
     @media (min-width: 699px) {
