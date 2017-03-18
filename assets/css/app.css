@@ -477,8 +477,8 @@ img {
   MAIN-HEADER
 /***************************************/
 #main-header {
-  background: -webkit-linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../assets/images/bg-2.jpg") no-repeat center;
-  background: linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../assets/images/bg-2.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../images/bg-2.jpg") no-repeat center;
+  background: linear-gradient(rgba(52, 232, 158, 0.75), rgba(15, 52, 67, 0.75)), url("../images/bg-2.jpg") no-repeat center;
   background-size: cover;
   border-top: 0.5rem solid #2c353e;
   height: 400px;
@@ -520,7 +520,7 @@ img {
   margin: 0;
   width: 100%; }
   #main-nav .main-logo {
-    background: url("../assets/images/icons/logo.svg") no-repeat center;
+    background: url("../images/icons/logo.svg") no-repeat center;
     color: #fafafa;
     text-indent: -9999px;
     overflow: hidden;
@@ -676,7 +676,7 @@ img {
   margin-bottom: 90px; }
 
 .techdegree-section::before {
-  content: url(../assets/images/icons/badge-icon.svg);
+  content: url(../images/icons/badge-icon.svg);
   display: block;
   width: 80px;
   height: 80px;
@@ -817,7 +817,16 @@ img {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 280px; }
+    min-height: 280px;
+    -webkit-transition: box-shadow .6s ease-out, -webkit-transform .6s ease-out;
+    transition: box-shadow .6s ease-out, -webkit-transform .6s ease-out;
+    transition: transform .6s ease-out, box-shadow .6s ease-out;
+    transition: transform .6s ease-out, box-shadow .6s ease-out, -webkit-transform .6s ease-out; }
+    #portfolio-section .portfolio-item:hover {
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+      -webkit-transform: translateY(-5px);
+              transform: translateY(-5px);
+      color: inherit; }
     #portfolio-section .portfolio-item > img {
       height: 150px;
       width: 260px; }
@@ -836,8 +845,8 @@ img {
     margin: 5px 0 8px 0; }
 
 #contact-section {
-  background: -webkit-linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../assets/images/contact-img.jpg") no-repeat center;
-  background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../assets/images/contact-img.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../images/contact-img.jpg") no-repeat center;
+  background: linear-gradient(rgba(236, 111, 96, 0.78), rgba(236, 111, 96, 0.78)), url("../images/contact-img.jpg") no-repeat center;
   background-color: #ec6f60;
   background-size: contain;
   background-position: center 36px;
