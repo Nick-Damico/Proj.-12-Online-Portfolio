@@ -27,6 +27,14 @@
 	    margin-left: auto;
         margin-right: auto;
         min-height: 280px;
+        transition: transform .6s ease-out,
+        			box-shadow .6s ease-out;
+
+        &:hover {
+        	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    		transform: translateY(-5px);
+    		color: inherit;
+        }
 
         > img {
         	height: 150px;

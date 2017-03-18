@@ -21,20 +21,20 @@ gulp.task("concatScripts", function () {
 		.pipe(maps.init())
 		.pipe(concat('app.js'))
 		.pipe(maps.write('./'))
-		.pipe(gulp.dest('dist/scripts'));
+		.pipe(gulp.dest('dist/assets/scripts'));
 });
 
 gulp.task("minifyScripts",['concatScripts'], function () {
-	return gulp.src("dist/scripts/app.js")
+	return gulp.src("dist/assets/scripts/app.js")
 			   .pipe(uglify())
 			   .pipe(rename('app.min.js'))
-			   .pipe(gulp.dest('dist/scripts'));
+			   .pipe(gulp.dest('dist/assets/scripts'));
 });
 
 gulp.task("prefix", ["concatCSS"], function () {
-	return gulp.src(["dist/css/app.css"])			   
+	return gulp.src(["dist/assets/css/app.css"])			   
 			   .pipe(prefix())
-			   .pipe(gulp.dest('dist/css'));
+			   .pipe(gulp.dest('dist/assets/css'));
 });
 
 gulp.task("concatCSS", function () {
@@ -44,14 +44,14 @@ gulp.task("concatCSS", function () {
 		.pipe(maps.init())
 		.pipe(concat('app.css'))
 		.pipe(maps.write('./'))
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('dist/assets/css'));
 });
 
 gulp.task("minifyCss", ["prefix"], function () {
-	return gulp.src("dist/css/app.css")
+	return gulp.src("dist/assets/css/app.css")
 			   .pipe(cssClean())
 			   .pipe(rename('app.min.css'))
-			   .pipe(gulp.dest('dist/css'));
+			   .pipe(gulp.dest('dist/assets/css'));
 });
 
 // gulp.task('jpgMin', function () {

@@ -1,6 +1,6 @@
 #contact-section {
 	@extend #about-me;
-	background: linear-gradient(rgba($contact-bg, .78), rgba($contact-bg, .78)), url('../assets/images/contact-img.jpg') no-repeat center;
+	background: linear-gradient(rgba($contact-bg, .78), rgba($contact-bg, .78)), url('../images/contact-img.jpg') no-repeat center;
 	background-color: $contact-bg;
 	background-size: contain;
 	background-position: center 36px;
