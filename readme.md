@@ -1,12 +1,13 @@
-//	Author: Nicholas D'Amico //	Contact: nickalan82@icloud.com //	Front End Techdegree Program
+# Author
+	 Nicholas D'Amico //	Contact: nickalan82@icloud.com //	Front End Techdegree Program
 
-//	Checked project in: 56.0.2924.87 (64-bit) FireFox 50.0 & 49.0.1 Safari 10.0.3 (12602.4.8)
+# Browsers Tested in
+	Checked project in: 56.0.2924.87 (64-bit) FireFox 50.0 & 49.0.1 Safari 10.0.3 (12602.4.8)
 
-**	Treehouse | Front End Techdegree Project: 12 Online Portfolio **
+## Treehouse | Front End Techdegree Project: 12 Online Portfolio 
 
-//	View Project 12 here.. https://nick-damico.github.io/Proj.-12-Online-Portfolio/
-
-//	Instructions
+# Live View Project
+	View Project 12 here.. https://nick-damico.github.io/Proj.-12-Online-Portfolio/
 
 # Online Portfolio
    Apply the skills learned for optimization of
