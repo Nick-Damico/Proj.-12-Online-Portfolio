@@ -8,10 +8,8 @@
 	FireFox 50.0 & 49.0.1
 	Safari 10.0.3 (12602.4.8)
 
-
-
 # Live View Project
-	View Project 12 here.. https://nick-damico.github.io/Proj.-12-Online-Portfolio/
+# https://nick-damico.github.io/Proj.-12-Online-Portfolio/
 
 # Online Portfolio
    Apply the skills learned for optimization of
