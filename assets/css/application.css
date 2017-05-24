@@ -494,6 +494,9 @@ img {
   position: absolute;
   top: 50%;
   left: 50%; }
+  @media (max-width: 350px) {
+    .intro-header {
+      margin-top: -35px; } }
   @media (min-width: 499px) {
     .intro-header {
       margin: -120px 0 0 -201px; } }
@@ -529,11 +532,7 @@ img {
     z-index: 980; }
   #main-nav .nav-links {
     display: none;
-    background: rgba(44, 53, 62, 0.85);
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 990; }
+    background: rgba(44, 53, 62, 0.85); }
     @media (min-width: 499px) {
       #main-nav .nav-links {
         width: calc(100% - 40px);
@@ -583,7 +582,7 @@ img {
     position: absolute;
     right: 10px;
     top: 10px;
-    z-index: 990;
+    z-index: 985;
     padding: 8px;
     box-sizing: content-box; }
     @media (min-width: 499px) {

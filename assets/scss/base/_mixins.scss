@@ -13,6 +13,12 @@
   }
 }
 
+@mixin xs-mobile {
+  @media  #{$brk-xs-mobile} {
+    @content;
+  }
+}
+
 @mixin sml-devices {
   @media #{$brk-sml-mobile} {
     @content;
