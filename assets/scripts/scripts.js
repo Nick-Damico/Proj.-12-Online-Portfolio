@@ -8,7 +8,7 @@
 	var navIcon = document.getElementById("nav-icon");
 	var ul = document.getElementsByClassName("nav-links")[0];
 	var navLi = document.querySelectorAll('.nav-links li');
-
+	var introHeader = document.querySelector('.intro-header');
 
 
 	///////////////////////////////////////////////////////////
@@ -55,12 +55,14 @@
 	///////////////////////////////////////////////////////////
 
 	function scroll(e) {
-		e.preventDefault();
-		var target = e.target;
-		var targetId = target.getAttribute("href");
-		var el = document.querySelector(targetId);
-		// Velocity(modal, "fadeOut", 1000);
-		Velocity(el, "scroll", { duration: 1200, offset: -45});
+		if(e.target.innerHTML !== 'Blog') {
+			e.preventDefault();
+			var target = e.target;
+			var targetId = target.getAttribute("href");
+			var el = document.querySelector(targetId);
+			// Velocity(modal, "fadeOut", 1000);
+			Velocity(el, "scroll", { duration: 1200, offset: -45});
+		}
 	}
 
 

@@ -21,6 +21,10 @@
   .nav-links {
     display: none;
     background: rgba($outer-space, .85);
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 990;
     
     @include tablet {
       @include grid-column;    
@@ -87,7 +91,7 @@ li {
     position: absolute;
     right: 10px;
     top: 10px;
-    z-index: 985;
+    z-index: 990;
     padding: 8px;
     box-sizing: content-box;
 

@@ -5567,12 +5567,15 @@
 	///////////////////////////////////////////////////////////
 
 	function scroll(e) {
-		e.preventDefault();
-		var target = e.target;
-		var targetId = target.getAttribute("href");
-		var el = document.querySelector(targetId);
-		// Velocity(modal, "fadeOut", 1000);
-		Velocity(el, "scroll", { duration: 1200, offset: -45});
+		console.log(e.target.innerHTML)
+		if(e.target.innerHTML !== 'Blog') {
+			e.preventDefault();
+			var target = e.target;
+			var targetId = target.getAttribute("href");
+			var el = document.querySelector(targetId);
+			// Velocity(modal, "fadeOut", 1000);
+			Velocity(el, "scroll", { duration: 1200, offset: -45});
+		}
 	}
 
 
