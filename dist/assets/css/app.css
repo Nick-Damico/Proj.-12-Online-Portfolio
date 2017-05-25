@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -698,10 +699,9 @@ img {
     display: flex; } }
 
 #flatiron-section {
-  background: url(../images/flatiron-bg.jpg) no-repeat center center;
+  background-color: #313e5c;
+  background: url(../images/flatiron-bg.jpg) no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
-  position: relative;
   -webkit-transition: width .8s ease-out;
   transition: width .8s ease-out;
   min-height: 650px; }
@@ -709,6 +709,9 @@ img {
     clear: both;
     content: "";
     display: block; }
+  @media (min-width: 699px) {
+    #flatiron-section {
+      background-attachment: fixed; } }
 
 .content-container {
   width: calc(100% - 40px);
@@ -716,7 +719,9 @@ img {
   margin-left: 20px;
   background: rgba(40, 138, 218, 0.8);
   border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   margin-top: 5rem;
+  margin-bottom: 4rem;
   padding: 40px 5px;
   text-align: center; }
   @media (min-width: 599px) {
@@ -739,12 +744,17 @@ img {
     margin-left: auto;
     margin-right: auto; }
   .content-container h4 {
+    background: #fefe77;
     font-size: 1.35rem;
     font-family: "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 1.7;
-    margin-bottom: 10px; }
-    .content-container h4 > span {
+    width: 50%;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    padding: 10px 5px; }
+    .content-container h4  
+    > span {
       border-bottom: 1px dashed black;
       padding-bottom: 5px; }
   .content-container span.skills {
