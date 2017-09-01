@@ -616,10 +616,10 @@ img {
   margin-bottom: 60px; }
   @media (min-width: 499px) {
     .section-intro {
-      width: calc(66.66667% - 33.33333px);
+      width: calc(66.6666666667% - 33.3333333333px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
   @media (min-width: 699px) {
     .section-intro {
       width: calc(50% - 30px);
@@ -641,10 +641,10 @@ img {
   padding: 20px; }
   @media (min-width: 440px) {
     .about-block-container .block-sections {
-      width: calc(66.66667% - 33.33333px);
+      width: calc(66.6666666667% - 33.3333333333px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
   @media (min-width: 599px) {
     .about-block-container .block-sections {
       width: calc(50% - 30px);
@@ -653,7 +653,7 @@ img {
       margin-left: calc(25% - 25px + 40px); } }
   @media (min-width: 699px) {
     .about-block-container .block-sections {
-      width: calc(33.33333% - 26.66667px);
+      width: calc(33.3333333333% - 26.6666666667px);
       float: left;
       margin-left: 20px; } }
   .about-block-container .block-sections .about-title {
@@ -714,10 +714,10 @@ img {
   text-align: center; }
   @media (min-width: 599px) {
     .content-container {
-      width: calc(83.33333% - 36.66667px);
+      width: calc(83.3333333333% - 36.6666666667px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(8.33333% - 21.66667px + 40px); } }
+      margin-left: calc(8.3333333333% - 21.6666666667px + 40px); } }
   @media (min-width: 499px) {
     .content-container {
       padding: 40px 20px; } }
@@ -800,12 +800,12 @@ img {
         margin-left: 20px; } }
     @media (min-width: 699px) {
       .skills-block-container .skills-block {
-        width: calc(41.66667% - 28.33333px);
+        width: calc(41.6666666667% - 28.3333333333px);
         float: left;
         margin-left: 20px; } }
     @media (min-width: 699px) {
       .skills-block-container .skills-block:nth-child(2) {
-        margin-left: calc(16.66667% - 23.33333px + 40px); } }
+        margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
     .skills-block-container .skills-block .skills-subtitle {
       font-size: 1.25rem;
       border-top-left-radius: 1rem;
@@ -853,14 +853,19 @@ img {
     margin-left: 20px;
     margin-bottom: 20px;
     text-align: center; }
-    @media (min-width: 599px) {
+    @media (min-width: 440px) {
       #portfolio-section .col {
-        width: calc(50% - 30px);
+        width: calc(100% - 40px);
         float: left;
         margin-left: 20px; } }
     @media (min-width: 699px) {
       #portfolio-section .col {
-        width: calc(33.33333% - 26.66667px);
+        width: calc(50% - 30px);
+        float: left;
+        margin-left: 20px; } }
+    @media (min-width: 1024px) {
+      #portfolio-section .col {
+        width: calc(33.3333333333% - 26.6666666667px);
         float: left;
         margin-left: 20px; } }
   #portfolio-section .portfolio-item {
@@ -879,14 +884,17 @@ img {
     #portfolio-section .portfolio-item > img {
       height: 150px;
       width: 260px; }
+    @media (min-width: 699px) {
+      #portfolio-section .portfolio-item {
+        max-width: 320px; } }
   #portfolio-section .section-intro {
     color: #2cbc7c; }
     @media (min-width: 699px) {
       #portfolio-section .section-intro {
-        width: calc(66.66667% - 33.33333px);
+        width: calc(66.6666666667% - 33.3333333333px);
         float: left;
         margin-left: 20px;
-        margin-left: calc(16.66667% - 23.33333px + 40px); } }
+        margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
   #portfolio-section .portfolio-subtitle {
     color: #fafafa;
     font-size: 1.5rem;
@@ -1005,10 +1013,10 @@ h2 {
       font-weight: 400; }
   @media (min-width: 699px) {
     .techdegree-section .techdegree-intro {
-      width: calc(66.66667% - 33.33333px);
+      width: calc(66.6666666667% - 33.3333333333px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px);
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px);
       margin-bottom: 2rem; } }
 
 /* --	SKILLS  -- */
@@ -1061,16 +1069,16 @@ h2 {
       width: calc(25% - 25px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
   @media (min-width: 599px) {
     .btn-1of2-layout {
-      width: calc(33.33333% - 26.66667px);
+      width: calc(33.3333333333% - 26.6666666667px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(8.33333% - 21.66667px + 40px); } }
+      margin-left: calc(8.3333333333% - 21.6666666667px + 40px); } }
   @media (min-width: 699px) {
     .btn-1of2-layout {
-      width: calc(16.66667% - 23.33333px);
+      width: calc(16.6666666667% - 23.3333333333px);
       float: left;
       margin-left: 20px;
       margin-left: calc(25% - 25px + 40px); } }
@@ -1084,19 +1092,19 @@ h2 {
       width: calc(25% - 25px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
   @media (min-width: 599px) {
     .btn-2of2-layout {
-      width: calc(33.33333% - 26.66667px);
+      width: calc(33.3333333333% - 26.6666666667px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
   @media (min-width: 699px) {
     .btn-2of2-layout {
-      width: calc(16.66667% - 23.33333px);
+      width: calc(16.6666666667% - 23.3333333333px);
       float: left;
       margin-left: 20px;
-      margin-left: calc(16.66667% - 23.33333px + 40px); } }
+      margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
 
 .btn-green {
   border-color: #33cf89; }
@@ -1175,10 +1183,10 @@ h2 {
       margin-left: 20px; }
       @media (min-width: 699px) {
         #modal #modal-content .modal-table {
-          width: calc(33.33333% - 26.66667px);
+          width: calc(33.3333333333% - 26.6666666667px);
           float: left;
           margin-left: 20px;
-          margin-left: calc(16.66667% - 23.33333px + 40px); } }
+          margin-left: calc(16.6666666667% - 23.3333333333px + 40px); } }
       #modal #modal-content .modal-table h4 {
         margin-top: 0;
         margin-bottom: 0;

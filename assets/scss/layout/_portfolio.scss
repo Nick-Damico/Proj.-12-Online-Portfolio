@@ -12,10 +12,14 @@
 		margin-bottom: 20px;
 		text-align: center;
 
-		@include md-devices {
-			@include grid-column(6);
+		@include sml-devices {
+			@include grid-column;
 		}
+
 		@include lg-devices {
+			@include grid-column(6)
+		}
+		@include wide-devices {
 			@include grid-column(4)
 		}
 	}
@@ -39,6 +43,12 @@
         > img {
         	height: 150px;
         	width: 260px;
+        }
+
+        @include lg-devices {
+        	& {
+        		max-width: 320px;
+        	}
         }
 	}
 

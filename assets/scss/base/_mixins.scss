@@ -13,36 +13,37 @@
   }
 }
 
+// min-width: 350px
 @mixin xs-mobile {
   @media  #{$brk-xs-mobile} {
     @content;
   }
 }
-
+// min-width: 440px
 @mixin sml-devices {
   @media #{$brk-sml-mobile} {
     @content;
   }
 }
-
+// min-width: 599px
 @mixin md-devices {
   @media #{$brk-md-mobile} {
     @content;
   }
 }
-
+// min-width: 699px
 @mixin lg-devices {
   @media #{$brk-lg-mobile} {
     @content;
   }
 }
-
+// min-width:499px
 @mixin tablet {
   @media #{$brk-tablet} {
     @content;
   }
 }
-
+//min-width: 1024px
 @mixin wide-devices {
   @media #{$brk-wide} {
     @content;
