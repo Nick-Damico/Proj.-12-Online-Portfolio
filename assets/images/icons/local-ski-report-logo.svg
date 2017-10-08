@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 521 302" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Artboard2" transform="matrix(1.30046,0,0,1,3281.9,428.644)">
+        <rect x="-2523.65" y="-428.644" width="400.156" height="301.719" style="fill:none;"/>
+        <clipPath id="_clip1">
+            <rect x="-2523.65" y="-428.644" width="400.156" height="301.719"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1.00071,0,0,1.01668,-2523.94,-428.644)">
+                <rect x="0" y="0" width="400.156" height="296.769" style="fill:url(#_Linear2);"/>
+            </g>
+            <g transform="matrix(0.152223,0,0,0.197959,-2750.36,-293.028)">
+                <g>
+                    <g id="Layer4">
+                        <g id="snowboard" transform="matrix(1.10448,0,0,1.32333,1682.95,-2311.21)">
+                            <path d="M1189.38,1102.71C1189.38,1021.86 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,1021.86 838.34,1102.71L838.34,2618.31C838.34,2699.16 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2699.16 1189.38,2618.31L1189.38,1102.71Z" style="fill:rgb(67,217,255);"/>
+                            <clipPath id="_clip3">
+                                <path d="M1189.38,1102.71C1189.38,1021.86 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,1021.86 838.34,1102.71L838.34,2618.31C838.34,2699.16 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2699.16 1189.38,2618.31L1189.38,1102.71Z"/>
+                            </clipPath>
+                            <g clip-path="url(#_clip3)">
+                                <g transform="matrix(0.844656,-0.272136,0.325531,0.703831,-685.19,1011.65)">
+                                    <rect x="1222.91" y="1007.76" width="658.859" height="367.422" style="fill:rgb(0,108,135);"/>
+                                </g>
+                                <g transform="matrix(-0.874554,-0.195582,0.233957,-0.728744,2092.71,3518.8)">
+                                    <rect x="1222.91" y="1007.76" width="658.859" height="367.422" style="fill:rgb(0,108,135);stroke:white;stroke-width:5.06px;"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="skis" transform="matrix(1,0,0,1,1290.73,-1865.14)">
+                            <g id="snowboard1" transform="matrix(0.290739,-0.490467,1.22065,0.723578,-1020.82,1048.55)">
+                                <path d="M1189.38,1026.75C1189.38,987.822 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,987.822 838.34,1026.75L838.34,2694.28C838.34,2733.2 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2733.2 1189.38,2694.28L1189.38,1026.75Z" style="fill:url(#_Radial4);"/>
+                                <clipPath id="_clip5">
+                                    <path d="M1189.38,1026.75C1189.38,987.822 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,987.822 838.34,1026.75L838.34,2694.28C838.34,2733.2 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2733.2 1189.38,2694.28L1189.38,1026.75Z"/>
+                                </clipPath>
+                                <g clip-path="url(#_clip5)">
+                                    <g transform="matrix(0.958727,-0.57199,1.66361,0.330844,-3438.42,2126.19)">
+                                        <path d="M311.484,2499.06L2709.7,1115.07" style="fill:none;stroke:rgb(223,118,199);stroke-width:16.6px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                                    </g>
+                                </g>
+                                <path d="M1189.38,1026.75C1189.38,987.822 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,987.822 838.34,1026.75L838.34,2694.28C838.34,2733.2 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2733.2 1189.38,2694.28L1189.38,1026.75Z" style="fill:none;stroke:black;stroke-width:0.92px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                            </g>
+                            <g id="snowboard2" transform="matrix(-0.291116,-0.490243,1.22205,-0.725678,-434.26,3743.65)">
+                                <path d="M1189.38,1026.63C1189.38,987.772 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,987.772 838.34,1026.63L838.34,2694.39C838.34,2733.26 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2733.26 1189.38,2694.39L1189.38,1026.63Z" style="fill:url(#_Radial6);"/>
+                                <clipPath id="_clip7">
+                                    <path d="M1189.38,1026.63C1189.38,987.772 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,987.772 838.34,1026.63L838.34,2694.39C838.34,2733.26 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2733.26 1189.38,2694.39L1189.38,1026.63Z"/>
+                                </clipPath>
+                                <g clip-path="url(#_clip7)">
+                                    <g transform="matrix(0.958727,-0.57199,1.66361,0.330844,-3438.42,2126.19)">
+                                        <path d="M311.484,2499.06L2709.7,1115.07" style="fill:none;stroke:rgb(223,118,199);stroke-width:16.6px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                                    </g>
+                                </g>
+                                <path d="M1189.38,1026.63C1189.38,987.772 1110.73,956.221 1013.86,956.221C916.988,956.221 838.34,987.772 838.34,1026.63L838.34,2694.39C838.34,2733.26 916.988,2764.81 1013.86,2764.81C1110.73,2764.81 1189.38,2733.26 1189.38,2694.39L1189.38,1026.63Z" style="fill:none;stroke:black;stroke-width:0.92px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                            </g>
+                        </g>
+                        <g id="Ruby.-gem" transform="matrix(1,0,0,1,1290.73,-1719.67)">
+                            <g id="Layer1">
+                                <g transform="matrix(-1.09645,1.34276e-16,-1.22192e-16,-0.997772,3379.33,4651.48)">
+                                    <path d="M1702.78,1890.89L2345.58,2955.14L1059.98,2955.14L1702.78,1890.89Z" style="fill:rgb(195,82,90);"/>
+                                </g>
+                                <g transform="matrix(-0.917644,1.12379e-16,-1.3078e-16,-1.0679,2996.27,4705.6)">
+                                    <path d="M1619.13,1817.39L2009.19,2811.75L1229.07,2811.75L1619.13,1817.39Z" style="fill:rgb(255,87,73);fill-opacity:0.498039;"/>
+                                </g>
+                                <g transform="matrix(1,0,0,1,-125.584,-61.8623)">
+                                    <path d="M2342.06,1764.79L933.106,1764.79L1285.35,1219.99L1989.82,1219.99L2342.06,1764.79Z" style="fill:rgb(224,69,81);"/>
+                                </g>
+                                <rect x="1154.38" y="1158.12" width="715.877" height="544.806" style="fill:rgb(255,78,75);fill-opacity:0.498039;"/>
+                                <g transform="matrix(0.544161,-1.33281e-16,2.44929e-16,1,550.726,-796.199)">
+                                    <path d="M1767.11,1954.32L2424.89,2499.13L1109.33,2499.13L1767.11,1954.32Z" style="fill:rgb(255,133,123);"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g transform="matrix(1.07736,0,0,1.16718,1173.43,-2184.7)">
+                            <g transform="matrix(0.715755,0,0,0.713332,444.044,497.001)">
+                                <g id="Layer3">
+                                    <path d="M2681.89,2116.84C2681.89,2061.18 2633.1,2016 2573.01,2016L412.019,2016C351.931,2016 303.147,2061.18 303.147,2116.84L303.147,2318.51C303.147,2374.16 351.931,2419.34 412.019,2419.34L2573.01,2419.34C2633.1,2419.34 2681.89,2374.16 2681.89,2318.51L2681.89,2116.84Z" style="fill:rgb(113,144,203);stroke:rgb(168,179,199);stroke-width:26.17px;stroke-linecap:round;stroke-miterlimit:1.5;"/>
+                                </g>
+                            </g>
+                            <g transform="matrix(14.4884,0,0,14.4884,-7196.45,-28794.2)">
+                                <text x="549.07px" y="2133.74px" style="font-family:'AnonymousPro-Regular', 'Anonymous Pro', monospace;font-size:12px;fill:rgb(242,244,247);">Local Ski Report</text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(400.156,0,0,296.769,0,148.384)"><stop offset="0" style="stop-color:rgb(51,207,137);stop-opacity:1"/><stop offset="0.56" style="stop-color:rgb(43,158,194);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(40,138,218);stop-opacity:1"/></linearGradient>
+        <radialGradient id="_Radial4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(175.52,0,0,904.293,1013.86,1860.51)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,179,224);stop-opacity:1"/></radialGradient>
+        <radialGradient id="_Radial6" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(175.52,0,0,904.293,1013.86,1860.51)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:rgb(0,179,224);stop-opacity:1"/></radialGradient>
+    </defs>
+</svg>
