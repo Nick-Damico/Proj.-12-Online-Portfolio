@@ -1,3 +1,8 @@
+// There are (3) tasks defined within this gulp file:
+	// 1. gulp 'clean': Deletes are files folders within /dist directory, CAUTION: you will not be able to rollback this taks!
+	// 2. gulp 'image': this optimizes all .jpg, .svg .png images with in the /img directory
+	// 3. gulp 'dist': Which concatinates all css, Js, directories into (1) minified file for distribution, optimizes all images.
+
 "use strict";
 // Add require for
   var gulp = require('gulp'),
