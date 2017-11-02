@@ -3,6 +3,9 @@
 	// 2. gulp 'image': this optimizes all .jpg, .svg .png images with in the /img directory
 	// 3. gulp 'dist': Which concatinates all css, Js, directories into (1) minified file for distribution, optimizes all images.
 
+// After making changes to dist folder use this command to push changes to gh-pages link for live viewing : git subtree push --prefix dist origin gh-pages
+
+
 "use strict";
 // Add require for
   var gulp = require('gulp'),
