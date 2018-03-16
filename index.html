@@ -16,7 +16,7 @@
 
       <!--  #main-header -->
       <header id="main-header">
-        <div class="wrapper">
+        <div class="wrapper group">
 
           <!--  Main Site Navigation -->
           <nav id="main-nav">
@@ -32,18 +32,19 @@
             <img id="nav-icon" src="assets/images/icons/nav-closed.svg" alt="navigation link icon" />
           </nav>
           <!--  End/ of #main-nav -->
-
-          <!-- Heading Container -->
-          <div class="intro-header">
-            <span>Hello!<br /> My Name is</span>
-            <h1 class="main-heading"> Nicholas D'Amico</h1>
-            <img class="title-rule" src="assets/images/icons/title-rule.svg" alt="" />
-            <h2><span class="sub-heading">Techdegree Graduate | FlatIron FS Developer</span></h2>
-          </div>
-          <!-- End/ of Heading Container -->
-
         </div>
         <!-- End/of .wrapper -->
+        <!-- Heading Container -->
+        <div class="intro-header">
+          <span>Hello!<br /> My Name is</span>
+          <h1 class="main-heading"> Nicholas D'Amico</h1>
+          <img class="title-rule" src="assets/images/icons/title-rule.svg" alt="" />
+          <div class="header__inner">
+            <h3 class="intro-header__inner-title-2">Treehouse Techdegree | Flatiron School Graduate</h3>
+            <h2 class="intro-header__inner-title-3">Full Stack Developer</h2>
+          </div>
+        </div>
+        <!-- End/ of Heading Container -->
       </header>
       <!--  End/ of #main-header -->
 
@@ -55,7 +56,13 @@
           <!-- Section Title each section will have one -->
           <h3 class="section-title">About Me</h3>
           <!-- Section Intro, each section will have one -->
-          <p class="section-intro">I'm an Auctioneer &amp; EMT-IV Tech. turned Front End Developer. With a passion for web design and development for the past 5 years as a hobby, I've made the decision to make it my career.</p>
+          <p class="section-intro section-intro--first-child">
+            I'm a full stack developer from Gatlinburg, Tenn. I've been coding for the past 4 years as a hobby.
+             In 2016 I decided that I wanted to change my life and do something for a living that I'm passionate about and love.
+          </p>
+          <p class="section-intro">
+             I enrolled that year and completed a Techdegree with Treehouse in March 2017. Wanting to further my skills, I decided to attend The Flatiron School and graduated March 14th, 2018.
+          </p>
 
           <!-- About Block Container (3)Section Container -->
           <div class="about-block-container">
@@ -67,7 +74,7 @@
               <div class="about-wrapper">
                 <img src="assets/images/location.jpg" alt="">
                 <h4 class="about-title">Location</h4>
-                <p>Gatlinburg, Tenn. has been my home for the last 20+ years. It's at the foothills of the Smoky Mtn. National Park. It's one of the most beautiful places in the United States. Being this close to the National Park allows me to take a break from studying code and enjoy the outdoors.
+                <p>Gatlinburg has been my home for the last 20+ years. It's at the foothills of the Smoky Mtn. National Park. It's one of the most beautiful places in the United States. Being this close to the National Park allows me to take a break from coding and enjoy the outdoors.
                 </p>
               </div>
             </section>
@@ -77,7 +84,7 @@
               <div class="about-wrapper">
                 <img src="assets/images/education.jpg" alt="">
                 <h4 class="about-title">Education</h4>
-                <p>I started learning to code with Treehouse back in 2013, and I just completed a Front End Techdegree. After graduating, I was accepted into The Flatiron School Full Stack Web Development Program and started on May 8th 2017. I've spent time learning at Codecademy, FreeCodeCamp, certificate courses with the W3C, and Udemy. 
+                <p>I started out with self-studying code in 2013, soon afterward I started coding with Treehouse and earned a Front End Techdegree in March 2017. After graduating, I was accepted into The Flatiron School Full Stack Bootcamp where I graduated in March 2018.
                 </p>
               </div>
             </section>
@@ -87,7 +94,7 @@
              <div class="about-wrapper">
                 <img src="assets/images/hobbies.jpg" alt="">
                 <h4 class="about-title">Hobbies</h4>
-                <p>My passion as of the last few years has become coding and when I have a free moment that is usually where my time is spent, but everyone needs to get outside and away from tech. I love being outdoors and enjoying the mtns where I live either hiking, rafting, or camping. I've also been practicing meditation for the past for 10 years. Oh, and the occasional video game needs played.
+                <p>My passion as of the last few years has become coding. Aside from coding, I'm equally excited by and love spending time outdoors enjoying the mountains where I live, having adventures with family and friends either hiking, rafting, or camping.
                 </p>
               </div>
             </section>
@@ -96,7 +103,7 @@
 
             <!-- TECHDEGREE CERTIFICATE SECTION -->
             <section class="techdegree-section">
-          
+
               <h3 class="techdegree-title">
                 Techegree Graduate<br /> <span>Certified Front End Web Developer</span>
               </h3>
@@ -126,7 +133,7 @@
           <div class="content-container">
             <img class="flatiron-icon" src="assets/images/icons/flatiron-icon.svg" alt="" />
             <h3 class="section-title flatiron-title">Flatiron School</h3>
-            <p>Student at the world's most advanced online coding bootcamp.</p>
+            <p>Graduate of the world's most advanced online coding bootcamp.</p>
 
             <h4><span>Software Engineer</span> <br> Full Stack Developer</h4>
 
@@ -138,7 +145,7 @@
             </div><!-- .btn-container -->
           </div><!-- .content-container -->
         </div><!-- .inner-wrapper -->
-        
+
       </section><!-- #flatiron-section -->
 
       <!-- SKILLS SECTION -->
@@ -161,7 +168,7 @@
                     <li>CSS <i class="points">3640</i></li>
                     <li>JavaScript <i class="points">3640</i></li>
                     <li>jQuery <i class="points">3640</i></li>
-                  </ul>          
+                  </ul>
                 </div>
               </div>
             <!-- End/of .skills-block (1) -->
@@ -179,10 +186,14 @@
                 <li>OOP Ruby</li>
                 <li>Sinatra</li>
                 <li>Rails</li>
-                <li>Rspec</li>                
+                <li>Rspec</li>
                 <li>ORM</li>
                 <li>AJAX</li>
+                <li>SQL</li>
                 <li>Node.js</li>
+                <li>React</li>
+                <li>Redux</li>
+                <li>PostgreSQL</li>
                 <li>API</li>
                 <li>GIT</li>
                 <li>Console</li>
@@ -209,7 +220,7 @@
        <img class="portfolio-icon" src="assets/images/icons/portfolio-icon.svg" alt="" />
         <h3 class="section-title portfolio-title">Portfolio</h3>
 
-       <p class="section-intro">These Projects were completed during the 12 Stages of the Techdegree Program. The Front End Web Development Techdegree is meant to train students in HTML, CSS and JavaScript, and this lets me practice and show my mastery of these fundamental building blocks of the web, so 'no' framworks are used.
+       <p class="section-intro">These Projects were completed during the 12 Stages of the Techdegree Program. The Front End Web Development Techdegree is meant to train students in HTML, CSS and JavaScript, and this lets me practice and show my mastery of these fundamental building blocks of the web without the assistance of frameworks.
           </p>
 
           <div class="col">
@@ -227,7 +238,7 @@
               <button data-get-id="project-2" class="btn btn-green">Learn More</button>
             </div>
           </div>
-        
+
            <div class="col">
             <div class="portfolio-item">
               <img src="assets/images/project-thumbs/video-player-full.jpg" alt="" />
@@ -268,14 +279,55 @@
             <div class="portfolio-item">
               <img src="assets/images/icons/local-ski-report-logo.svg" alt="" />
               <h4 class="portfolio-subtitle">Ruby Data Gem</h4>
-              <button data-get-id="project-6" class="btn btn-green">Learn More</button>
+              <button data-get-id="project-7" class="btn btn-green">Learn More</button>
             </div>
           </div>
 
+          <div class="col">
+            <div class="portfolio-item">
+              <img src="assets/images/project-thumbs/hikeit-app-full.jpg" alt="" />
+              <h4 class="portfolio-subtitle">Rails App: HikeIt</h4>
+              <button data-get-id="project-8" class="btn btn-green">Learn More</button>
+            </div>
+          </div>
 
-           <h4 class="section-title portfolio-title">FreeCodeCamp Portfolio</h4>
-           <p class="section-intro">Portfolio Projects from the FreeCodeCamp School Front End Developer program.
-          </p>
+           <div class="col">
+            <div class="portfolio-item">
+              <img src="assets/images/project-thumbs/calendar-app-full.jpg" alt="" />
+              <h4 class="portfolio-subtitle">Sinatra: Auction App</h4>
+              <button class="btn btn-green" data-get-id="project-9">Learn More</button>
+            </div>
+          </div>
+
+          <h4 class="section-title portfolio-title">Free Code Camp Portfolio</h4>
+          <p class="section-intro">Portfolio Projects from the Free Code Camp. These projects are built with CSS, HTML, JavaScript.
+         </p>
+
+
+         <div class="col">
+           <div class="portfolio-item">
+             <img src="assets/images/project-thumbs/tribute-full.jpg" alt="" />
+             <h4 class="portfolio-subtitle">Tribute Page</h4>
+             <button data-get-id="project-10" class="btn btn-green">Learn More</button>
+           </div>
+         </div>
+
+         <div class="col">
+           <div class="portfolio-item">
+             <img src="assets/images/project-thumbs/rquote-full.jpg" alt="" />
+             <h4 class="portfolio-subtitle">Random Quote</h4>
+             <button data-get-id="project-11" class="btn btn-green">Learn More</button>
+           </div>
+         </div>
+
+          <div class="col">
+           <div class="portfolio-item">
+             <img src="assets/images/project-thumbs/local-weather-full.jpg" alt="" />
+             <h4 class="portfolio-subtitle">Local Weather</h4>
+             <button class="btn btn-green" data-get-id="project-12">Learn More</button>
+           </div>
+         </div>
+
 
         </div>
         <!-- End/ of .inner-wrapper -->
@@ -292,7 +344,7 @@
           </p>
 
        <div class="contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
-         <span itemprop="telephone">865-216-8116</span>
+         <span itemprop="telephone">865-722-1024</span>
          <a href="mailto:nickalan82@icloud.com"><span itemprop="email">nickalan82@icloud.com</span></a>
        </div>
 
@@ -303,7 +355,7 @@
         <li class="social-items"><a href="https://www.linkedin.com/in/nick-damico/"><img src="assets/images/icons/linkedin.svg" alt="" /></a></li>
        </ul>
        </div>
-          
+
 
         </div>
         <!-- End/ of .inner-wrapper -->
@@ -321,7 +373,7 @@
 
             <div class="modal-table">
               <h4>Skills Used</h4>
-              <ul class="tech">            
+              <ul class="tech">
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Repsonsive Design</li>
@@ -329,10 +381,10 @@
             </div>
 
             <h4 class="modal-proj-title">Project Description</h4>
-            <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque molestie fringilla. Cras egestas lectus sed magna tristique tempor. Phasellus vel arcu eu neque rutrum vestibulum auctor quis felis. Nullam hendrerit urna nec efficitur suscipit. Maecenas vel nisl viverra, lacinia lorem at, pharetra dui. Integer erat mi, blandit in urna quis, suscipit condimentum dolor. Duis semper elit vel dui aliquam cursus. 
+            <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque molestie fringilla. Cras egestas lectus sed magna tristique tempor. Phasellus vel arcu eu neque rutrum vestibulum auctor quis felis. Nullam hendrerit urna nec efficitur suscipit. Maecenas vel nisl viverra, lacinia lorem at, pharetra dui. Integer erat mi, blandit in urna quis, suscipit condimentum dolor. Duis semper elit vel dui aliquam cursus.
             </p>
 
-            <p class="proj-description">Phasellus nisl nisl, venenatis non convallis id, mollis at risus. In laoreet lacus quis risus lobortis, ut pretium erat aliquet. 
+            <p class="proj-description">Phasellus nisl nisl, venenatis non convallis id, mollis at risus. In laoreet lacus quis risus lobortis, ut pretium erat aliquet.
             </p>
 
             <div class="btn-container">
@@ -344,7 +396,7 @@
         </div>
         </div>
       </div>
-     
+
 
     <!-- SCRIPTS -->
     <!-- <script src="assets/scripts/modal-dom.js"></script> -->

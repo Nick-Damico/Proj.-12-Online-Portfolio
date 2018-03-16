@@ -1,14 +1,18 @@
 /***************************************************
  Font Styles
-***************************************************/ 
+***************************************************/
 
 /* --	HEADER  -- */
 .intro-header {
 	text-align: center;
 
 	:first-child {
-    	font-weight: 300; 
-    	line-height: 1.1;     
+    	font-weight: 300;
+    	line-height: 1.1;
+	}
+
+	.intro-header__inner-title-2 {
+
 	}
 }
 
@@ -22,10 +26,10 @@
     }
 }
 
-h2 {
+h2,h3 {
 	margin-top: 4px;
 	color: $text-sub-heading;
-    font-size: .725rem;
+    font-size: .8rem;
     font-weight: 300;
     letter-spacing: 2px;
 
@@ -48,13 +52,16 @@ h2 {
 }
 
 .section-intro {
-	font-size: $about-paragraph-sm;
+	font-size: 1.1rem;
 	font-weight: 300;
 
 	@include lg-devices {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
+}
 
+.section-intro--first-child {
+	margin-bottom: 1rem;
 }
 
 .about-block-container {
@@ -85,7 +92,7 @@ h2 {
 	.techdegree-title {
 		color: $text-about-heading;
 		font-size: $techdegree-title;
-		font-weight: 300;		
+		font-weight: 300;
 
 		> span {
 			color: $text-about-subheading;
