@@ -11,9 +11,6 @@
     	line-height: 1.1;
 	}
 
-	.intro-header__inner-title-2 {
-
-	}
 }
 
 .main-heading {
@@ -27,7 +24,8 @@
 }
 
 h2,h3 {
-	margin-top: 4px;
+	margin-top: 8px;
+	margin-bottom: 0px;
 	color: $text-sub-heading;
     font-size: .8rem;
     font-weight: 300;
@@ -52,7 +50,7 @@ h2,h3 {
 }
 
 .section-intro {
-	font-size: 1.1rem;
+	font-size: 1.05rem;
 	font-weight: 300;
 
 	@include lg-devices {
