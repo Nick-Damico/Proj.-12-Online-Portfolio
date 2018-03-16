@@ -7,400 +7,422 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Techdegree Project 12 Portfolio Project Capstone Project">
     <meta name="keywords" content="HTML, CSS, JavaScript, Neat, Responsive, Mobile First, Portfolio, Web Designer, Web Developer">
-    <title>Online Portfolio : Project 12 Treehouse Techdegree.</title>
+    <title>Online Portfolio : Project 12 Treehouse Techdegree | Flatiron School Graduate | Tennessee</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700%7COpen+Sans:300,400" rel="stylesheet">
    <link rel="stylesheet" href="assets/css/app.min.css">
 
   </head>
-  <body>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <meta name="author" content="Nicholas D'Amico">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Techdegree Project 12 Portfolio Project Capstone Project">
+      <meta name="keywords" content="HTML, CSS, JavaScript, Neat, Responsive, Mobile First, Portfolio, Web Designer, Web Developer">
+      <title>Online Portfolio : Project 12 Treehouse Techdegree.</title>
+      <link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700%7COpen+Sans:300,400" rel="stylesheet">
+     <link rel="stylesheet" href="assets/css/application.css">
 
-      <!--  #main-header -->
-      <header id="main-header">
-        <div class="wrapper">
+    </head>
+    <body>
 
-          <!--  Main Site Navigation -->
-          <nav id="main-nav">
-            <a href="#" class="main-logo">main-logo</a>
-            <ul class="nav-links">
-              <li class="selected"><a href="#about-me">About</a></li>
-              <li><a href="#skills-section">Skills</a></li>
-              <li><a href="#portfolio-section">Portfolio</a></li>
-              <li><a href="#contact-section">Contact</a></li>
-              <li><a href="https://nick-damico.github.io" target="_blank">Blog</a></li>
-            </ul>
-            <!--  End/ of .nav-links  -->
-            <img id="nav-icon" src="assets/images/icons/nav-closed.svg" alt="navigation link icon" />
-          </nav>
-          <!--  End/ of #main-nav -->
+        <!--  #main-header -->
+        <header id="main-header">
+          <div class="wrapper group">
 
+            <!--  Main Site Navigation -->
+            <nav id="main-nav">
+              <a href="#" class="main-logo">main-logo</a>
+              <ul class="nav-links">
+                <li class="selected"><a href="#about-me">About</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="https://nick-damico.github.io" target="_blank">Blog</a></li>
+              </ul>
+              <!--  End/ of .nav-links  -->
+              <img id="nav-icon" src="assets/images/icons/nav-closed.svg" alt="navigation link icon" />
+            </nav>
+            <!--  End/ of #main-nav -->
+          </div>
+          <!-- End/of .wrapper -->
           <!-- Heading Container -->
           <div class="intro-header">
             <span>Hello!<br /> My Name is</span>
             <h1 class="main-heading"> Nicholas D'Amico</h1>
             <img class="title-rule" src="assets/images/icons/title-rule.svg" alt="" />
             <div class="header__inner">
-              <h3><span class="sub-heading">Techdegree Graduate | Flatiron School Graduate</span><br /></h3>
-              <h2><span class="sub-heading">Full Stack Developer</span></h2>
+              <h3 class="intro-header__inner-title-2">Treehouse Techdegree | Flatiron School Graduate</h3>
+              <h2 class="intro-header__inner-title-3">Full Stack Developer</h2>
             </div>
           </div>
           <!-- End/ of Heading Container -->
+        </header>
+        <!--  End/ of #main-header -->
 
-        </div>
-        <!-- End/of .wrapper -->
-      </header>
-      <!--  End/ of #main-header -->
+        <!--  ABOUT ME SECTION  -->
+        <section id="about-me">
+          <div class="inner-wrapper">
 
-      <!--  ABOUT ME SECTION  -->
-      <section id="about-me">
-        <div class="inner-wrapper">
+            <img class="about-icon" src="assets/images/icons/profile-icon.svg" alt="" />
+            <!-- Section Title each section will have one -->
+            <h3 class="section-title">About Me</h3>
+            <!-- Section Intro, each section will have one -->
+            <p class="section-intro section-intro--first-child">
+              I'm a full stack developer from Gatlinburg, Tenn. I've been coding for the past 4 years as a hobby.
+               In 2016 I decided that I wanted to change my life and do something for a living that I'm passionate about and love.
+            </p>
+            <p class="section-intro">
+               I enrolled that year and completed a Techdegree with Treehouse in March 2017. Wanting to further my skills, I decided to attend The Flatiron School and graduated March 14th, 2018.
+            </p>
 
-          <img class="about-icon" src="assets/images/icons/profile-icon.svg" alt="" />
-          <!-- Section Title each section will have one -->
-          <h3 class="section-title">About Me</h3>
-          <!-- Section Intro, each section will have one -->
-          <p class="section-intro">
-            I'm web development student from Gatlinburg, Tenn. I've been coding for the past 4 years as a hobby.
-             In 2016 I decided that I wanted to change my life and do something for a living that I'm passionate about and love,
-             so I enrolled and finished a Techdegree @ TeamTreehouse in March 2017. Wanting to further my skills, I decided to attend The Flatiron School and learn full stack development.
-          </p>
+            <!-- About Block Container (3)Section Container -->
+            <div class="about-block-container">
 
-          <!-- About Block Container (3)Section Container -->
-          <div class="about-block-container">
+            <div class="newDiv">
 
-          <div class="newDiv">
+            <!-- Location Section -->
+              <section class="block-sections location-block">
+                <div class="about-wrapper">
+                  <img src="assets/images/location.jpg" alt="">
+                  <h4 class="about-title">Location</h4>
+                  <p>Gatlinburg has been my home for the last 20+ years. It's at the foothills of the Smoky Mtn. National Park. It's one of the most beautiful places in the United States. Being this close to the National Park allows me to take a break from coding and enjoy the outdoors.
+                  </p>
+                </div>
+              </section>
 
-          <!-- Location Section -->
-            <section class="block-sections location-block">
-              <div class="about-wrapper">
-                <img src="assets/images/location.jpg" alt="">
-                <h4 class="about-title">Location</h4>
-                <p>Gatlinburg, Tenn. has been my home for the last 20+ years. It's at the foothills of the Smoky Mtn. National Park. It's one of the most beautiful places in the United States. Being this close to the National Park allows me to take a break from studying code and enjoy the outdoors.
-                </p>
+               <!-- Location Section -->
+              <section class="block-sections location-block">
+                <div class="about-wrapper">
+                  <img src="assets/images/education.jpg" alt="">
+                  <h4 class="about-title">Education</h4>
+                  <p>I started out with self-studying code in 2013, soon afterward I started coding with Treehouse and earned a Front End Techdegree in March 2017. After graduating, I was accepted into The Flatiron School Full Stack Bootcamp where I graduated in March 2018.
+                  </p>
+                </div>
+              </section>
+
+               <!-- Location Section -->
+              <section class="block-sections location-block">
+               <div class="about-wrapper">
+                  <img src="assets/images/hobbies.jpg" alt="">
+                  <h4 class="about-title">Hobbies</h4>
+                  <p>My passion as of the last few years has become coding. Aside from coding, I'm equally excited by and love spending time outdoors enjoying the mountains where I live, having adventures with family and friends either hiking, rafting, or camping.
+                  </p>
+                </div>
+              </section>
+
               </div>
-            </section>
 
-             <!-- Location Section -->
-            <section class="block-sections location-block">
-              <div class="about-wrapper">
-                <img src="assets/images/education.jpg" alt="">
-                <h4 class="about-title">Education</h4>
-                <p>I started learning to code with Treehouse back in 2013, and I just completed a Front End Techdegree. After graduating, I was accepted into The Flatiron School Full Stack Web Development Program and started on May 8th 2017. I've spent time learning at Codecademy, FreeCodeCamp, certificate courses with the W3C, and Udemy.
-                </p>
-              </div>
-            </section>
+              <!-- TECHDEGREE CERTIFICATE SECTION -->
+              <section class="techdegree-section">
 
-             <!-- Location Section -->
-            <section class="block-sections location-block">
-             <div class="about-wrapper">
-                <img src="assets/images/hobbies.jpg" alt="">
-                <h4 class="about-title">Hobbies</h4>
-                <p>My passion as of the last few years has become coding and when I have a free moment that is usually where my time is spent, but everyone needs to get outside and away from tech. I love being outdoors and enjoying the mtns where I live either hiking, rafting, or camping.
+                <h3 class="techdegree-title">
+                  Techegree Graduate<br /> <span>Certified Front End Web Developer</span>
+                </h3>
+
+                <p class="techdegree-intro">In March 2017, I completed the Front End Web Developer certification through treamtreehouse.com. Over the course of 7 months I was able to build a solid foundation of HTML, CSS, JavaScript and other front end technologies through lectures, coding challenges, quizzes and 12 portfolio Projects. The program concluded with a final proctored exam.
                 </p>
-              </div>
-            </section>
+
+                <div class="btn-container">
+                  <a class="btn btn-1of2-layout btn-green" href="https://www.credential.net/ojuilkzd" target="_blank">Certificate</a>
+                  <a class="btn btn-2of2-layout btn-blue" href="https://teamtreehouse.com/techdegree" target="_blank">Techdegree</a>
+                </div>
+
+              </section>
+              <!-- END/ OF TECHDEGREE CERT -->
 
             </div>
+            <!--  End of .about-block-container -->
+          </div>
+          <!-- End/ of .wrapper -->
+        </section>
+        <!-- End of #about-me -->
 
-            <!-- TECHDEGREE CERTIFICATE SECTION -->
-            <section class="techdegree-section">
+         <!-- FLATIRON SCHOOL SECTION -->
+        <section id="flatiron-section">
+          <div class="inner-wrapper">
 
-              <h3 class="techdegree-title">
-                Techegree Graduate<br /> <span>Certified Front End Web Developer</span>
-              </h3>
+            <div class="content-container">
+              <img class="flatiron-icon" src="assets/images/icons/flatiron-icon.svg" alt="" />
+              <h3 class="section-title flatiron-title">Flatiron School</h3>
+              <p>Graduate of the world's most advanced online coding bootcamp.</p>
 
-              <p class="techdegree-intro">In March 2017, I completed the Front End Web Developer certification through treamtreehouse.com. Over the course of 7 months I was able to build a solid foundation of HTML, CSS, JavaScript and other front end technologies through lectures, coding challenges, quizzes and 12 portfolio Projects. The program concluded with a final proctored exam.
+              <h4><span>Software Engineer</span> <br> Full Stack Developer</h4>
+
+              <span class="skills">Ruby. Rails. SQL. ORM. Sinatra. JavaScript. React. Redux.</span>
+
+              <div class="btn-container">
+                <a class="btn btn-1of2-layout btn-git" href="https://flatironschool.com/programs/online-web-developer-career-course/" target="_blank">Learn More</a>
+                <a class="btn btn-2of2-layout btn-green" href="https://learn.co/Nick-Damico" target="_blank">Profile</a>
+              </div><!-- .btn-container -->
+            </div><!-- .content-container -->
+          </div><!-- .inner-wrapper -->
+
+        </section><!-- #flatiron-section -->
+
+        <!-- SKILLS SECTION -->
+        <section id="skills-section">
+          <div class="inner-wrapper">
+            <img class="skills-icon" src="assets/images/icons/skills-icon.svg" alt="" />
+            <h3 class="section-title skills-title">Skills</h3>
+            <p class="section-intro">Every day I work hard to learn new skills, abilities and further my knowledge so that I can improve and reach my goal of becoming a professional developer.
+            </p>
+            <div class="skills-block-container">
+              <div class="skills-block">
+                <h4 class="skills-subtitle">Treehouse Profile</h4>
+                <!-- Left Align and padding -->
+                  <div class="skills-inner">
+                    <i class="total">15,883</i>
+                    <p>Total Points</p>
+                    <hr  class="style14" />
+                    <ul class="skills-list">
+                      <li>HTML <i class="points">3640</i></li>
+                      <li>CSS <i class="points">3640</i></li>
+                      <li>JavaScript <i class="points">3640</i></li>
+                      <li>jQuery <i class="points">3640</i></li>
+                    </ul>
+                  </div>
+                </div>
+              <!-- End/of .skills-block (1) -->
+
+               <div class="skills-block">
+               <h4 class="skills-subtitle">Technologies</h4>
+               <div class="skills-inner">
+                <ul class="tech">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Sass</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>Ruby</li>
+                  <li>OOP Ruby</li>
+                  <li>Sinatra</li>
+                  <li>Rails</li>
+                  <li>Rspec</li>
+                  <li>ORM</li>
+                  <li>AJAX</li>
+                  <li>SQL</li>
+                  <li>Node.js</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>PostgreSQL</li>
+                  <li>API</li>
+                  <li>GIT</li>
+                  <li>Console</li>
+                  <li>Bootstrap</li>
+                  <li>WordPress</li>
+                  <li>Bourbon/Neat</li>
+                  <li>Affinity</li>
+                  <li>Adobe</li>
+                </ul>
+                <!-- End/of .tech -->
+               </div>
+               <!-- End/ of .skills-inner -->
+              </div>
+            <!-- End/of .skills-block (2) -->
+            </div>
+            <!-- End/of .skills-block-container -->
+          </div>
+        </section>
+        <!-- End/ of #skills-section -->
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio-section">
+        <div class="inner-wrapper">
+         <img class="portfolio-icon" src="assets/images/icons/portfolio-icon.svg" alt="" />
+          <h3 class="section-title portfolio-title">Portfolio</h3>
+
+         <p class="section-intro">These projects were completed during the 12 Stages of the Techdegree Program. The Front End Web Development Techdegree is meant to train students in HTML, CSS, and JavaScript, and this lets me practice and shows my mastery of these fundamental building blocks of the web without the assistance of frameworks.
+            </p>
+
+            <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/rwd-form-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">Contact Form</h4>
+                <button data-get-id="project-1" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+             <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/inter-photo-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">Photo Gallery</h4>
+                <button data-get-id="project-2" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+             <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/video-player-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">Interactive Video</h4>
+                <button data-get-id="project-3" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/web-app-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">App Dashboard</h4>
+                <button data-get-id="project-4" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/api-gallery-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">API Gallery</h4>
+                <button data-get-id="project-5" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/site-optimize-full2.jpg" alt="" />
+                <h4 class="portfolio-subtitle">Site Optimization</h4>
+                <button data-get-id="project-6" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+             <h4 class="section-title portfolio-title">Flatiron Portfolio</h4>
+             <p class="section-intro">The following portfolio projects are from the Flatiron School Full Stack Bootcamp which includes application design using Ruby, ORM, Sinatra, Rails, javaScript, React, Redux.
+            </p>
+
+            <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/icons/local-ski-report-logo.svg" alt="" />
+                <h4 class="portfolio-subtitle">Ruby Data Gem</h4>
+                <button data-get-id="project-7" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/hikeit-app-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">Rails App: HikeIt</h4>
+                <button data-get-id="project-8" class="btn btn-green">Learn More</button>
+              </div>
+            </div>
+
+             <div class="col">
+              <div class="portfolio-item">
+                <img src="assets/images/project-thumbs/calendar-app-full.jpg" alt="" />
+                <h4 class="portfolio-subtitle">Sinatra: Auction App</h4>
+                <button class="btn btn-green" data-get-id="project-9">Learn More</button>
+              </div>
+            </div>
+
+            <div class="col">
+             <div class="portfolio-item">
+               <img src="assets/images/project-thumbs/calendar-app-full.jpg" alt="" />
+               <h4 class="portfolio-subtitle">React Redux Rails</h4>
+               <button class="btn btn-green" data-get-id="project-11">Learn More</button>
+             </div>
+           </div>
+
+            <h4 class="section-title portfolio-title">Free Code Camp Portfolio</h4>
+            <p class="section-intro">The following projects are from the Free Code Camp curriculum, built using CSS, HTML, JavaScript.
+           </p>
+
+
+           <div class="col">
+             <div class="portfolio-item">
+               <img src="assets/images/project-thumbs/tribute-full.jpg" alt="" />
+               <h4 class="portfolio-subtitle">Tribute Page</h4>
+               <button data-get-id="project-10" class="btn btn-green">Learn More</button>
+             </div>
+           </div>
+
+           <div class="col">
+             <div class="portfolio-item">
+               <img src="assets/images/project-thumbs/rquote-full.jpg" alt="" />
+               <h4 class="portfolio-subtitle">Random Quote</h4>
+               <button data-get-id="project-11" class="btn btn-green">Learn More</button>
+             </div>
+           </div>
+
+            <div class="col">
+             <div class="portfolio-item">
+               <img src="assets/images/project-thumbs/local-weather-full.jpg" alt="" />
+               <h4 class="portfolio-subtitle">Local Weather</h4>
+               <button class="btn btn-green" data-get-id="project-12">Learn More</button>
+             </div>
+           </div>
+
+
+          </div>
+          <!-- End/ of .inner-wrapper -->
+        </section>
+        <!-- End/ of #portfolio-section -->
+
+        <!-- CONTACT SECTION -->
+        <section id="contact-section">
+        <div class="inner-wrapper">
+         <img class="contact-icon" src="assets/images/icons/export-icon.svg" alt="" />
+          <h3 class="section-title contact-title">Contact</h3>
+
+         <p class="section-intro">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!
+            </p>
+
+         <div class="contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
+           <span itemprop="telephone">865-722-1024</span>
+           <a href="mailto:nickalan82@icloud.com"><span itemprop="email">nickalan82@icloud.com</span></a>
+         </div>
+
+         <div class="social-container">
+         <ul class="social-links">
+          <li class="social-items"><a href="https://github.com/Nick-Damico"><img src="assets/images/icons/github.svg" alt="" /></a></li>
+          <li class="social-items"><a href="https://twitter.com/NickAlan82"><img src="assets/images/icons/twitter.svg" alt="" /></a></li>
+          <li class="social-items"><a href="https://www.linkedin.com/in/nick-damico/"><img src="assets/images/icons/linkedin.svg" alt="" /></a></li>
+         </ul>
+         </div>
+
+
+          </div>
+          <!-- End/ of .inner-wrapper -->
+        </section>
+        <!-- End/ of #contact-section -->
+
+        <div id="modal">
+          <div class="modal-inner">
+          <div class="inner-wrapper group">
+            <div id="modal-content">
+
+              <h3 class="section-title">Project Title</h3>
+
+              <img class="modal-img" src="assets/images/modal-img/rwd-form-modal.jpg" alt="" />
+
+              <div class="modal-table">
+                <h4>Skills Used</h4>
+                <ul class="tech">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Repsonsive Design</li>
+                </ul>
+              </div>
+
+              <h4 class="modal-proj-title">Project Description</h4>
+              <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque molestie fringilla. Cras egestas lectus sed magna tristique tempor. Phasellus vel arcu eu neque rutrum vestibulum auctor quis felis. Nullam hendrerit urna nec efficitur suscipit. Maecenas vel nisl viverra, lacinia lorem at, pharetra dui. Integer erat mi, blandit in urna quis, suscipit condimentum dolor. Duis semper elit vel dui aliquam cursus.
+              </p>
+
+              <p class="proj-description">Phasellus nisl nisl, venenatis non convallis id, mollis at risus. In laoreet lacus quis risus lobortis, ut pretium erat aliquet.
               </p>
 
               <div class="btn-container">
-                <a class="btn btn-1of2-layout btn-green" href="https://www.credential.net/ojuilkzd" target="_blank">Certificate</a>
-                <a class="btn btn-2of2-layout btn-blue" href="https://teamtreehouse.com/techdegree" target="_blank">Techdegree</a>
+                <a class="btn btn-1of2-layout btn-green">View Live</a>
+                <a class="btn btn-2of2-layout btn-git">Github</a>
               </div>
-
-            </section>
-            <!-- END/ OF TECHDEGREE CERT -->
-
-          </div>
-          <!--  End of .about-block-container -->
-        </div>
-        <!-- End/ of .wrapper -->
-      </section>
-      <!-- End of #about-me -->
-
-       <!-- FLATIRON SCHOOL SECTION -->
-      <section id="flatiron-section">
-        <div class="inner-wrapper">
-
-          <div class="content-container">
-            <img class="flatiron-icon" src="assets/images/icons/flatiron-icon.svg" alt="" />
-            <h3 class="section-title flatiron-title">Flatiron School</h3>
-            <p>Student at the world's most advanced online coding bootcamp.</p>
-
-            <h4><span>Software Engineer</span> <br> Full Stack Developer</h4>
-
-            <span class="skills">Ruby. Rails. SQL. ORM. Sinatra. JavaScript. React. Redux.</span>
-
-            <div class="btn-container">
-              <a class="btn btn-1of2-layout btn-git" href="https://flatironschool.com/programs/online-web-developer-career-course/" target="_blank">Learn More</a>
-              <a class="btn btn-2of2-layout btn-green" href="https://learn.co/Nick-Damico" target="_blank">Profile</a>
-            </div><!-- .btn-container -->
-          </div><!-- .content-container -->
-        </div><!-- .inner-wrapper -->
-
-      </section><!-- #flatiron-section -->
-
-      <!-- SKILLS SECTION -->
-      <section id="skills-section">
-        <div class="inner-wrapper">
-          <img class="skills-icon" src="assets/images/icons/skills-icon.svg" alt="" />
-          <h3 class="section-title skills-title">Skills</h3>
-          <p class="section-intro">Every day I work hard to learn new skills, abilities,  and further my knowledge so that I can improve and reach my goal of becoming a professional developer.
-          </p>
-          <div class="skills-block-container">
-            <div class="skills-block">
-              <h4 class="skills-subtitle">Treehouse Profile</h4>
-              <!-- Left Align and padding -->
-                <div class="skills-inner">
-                  <i class="total">15,883</i>
-                  <p>Total Points</p>
-                  <hr  class="style14" />
-                  <ul class="skills-list">
-                    <li>HTML <i class="points">3640</i></li>
-                    <li>CSS <i class="points">3640</i></li>
-                    <li>JavaScript <i class="points">3640</i></li>
-                    <li>jQuery <i class="points">3640</i></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- End/of .skills-block (1) -->
-
-             <div class="skills-block">
-             <h4 class="skills-subtitle">Technologies</h4>
-             <div class="skills-inner">
-              <ul class="tech">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Sass</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-                <li>Ruby</li>
-                <li>OOP Ruby</li>
-                <li>Sinatra</li>
-                <li>Rails</li>
-                <li>Rspec</li>
-                <li>ORM</li>
-                <li>AJAX</li>
-                <li>SQL</li>
-                <li>Node.js</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>PostgreSQL</li>
-                <li>API</li>
-                <li>GIT</li>
-                <li>Console</li>
-                <li>Bootstrap</li>
-                <li>WordPress</li>
-                <li>Bourbon/Neat</li>
-                <li>Affinity</li>
-                <li>Adobe</li>
-              </ul>
-              <!-- End/of .tech -->
-             </div>
-             <!-- End/ of .skills-inner -->
-            </div>
-          <!-- End/of .skills-block (2) -->
-          </div>
-          <!-- End/of .skills-block-container -->
-        </div>
-      </section>
-      <!-- End/ of #skills-section -->
-
-      <!-- PORTFOLIO SECTION -->
-      <section id="portfolio-section">
-      <div class="inner-wrapper">
-       <img class="portfolio-icon" src="assets/images/icons/portfolio-icon.svg" alt="" />
-        <h3 class="section-title portfolio-title">Portfolio</h3>
-
-       <p class="section-intro">These Projects were completed during the 12 Stages of the Techdegree Program. The Front End Web Development Techdegree is meant to train students in HTML, CSS and JavaScript, and this lets me practice and show my mastery of these fundamental building blocks of the web, so 'no' framworks are used.
-          </p>
-
-          <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/rwd-form-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">Contact Form</h4>
-              <button data-get-id="project-1" class="btn btn-green">Learn More</button>
+              <img class="modal-close" src="assets/images/icons/close-icon.svg" alt="" />
             </div>
           </div>
-
-           <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/inter-photo-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">Photo Gallery</h4>
-              <button data-get-id="project-2" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-           <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/video-player-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">Interactive Video</h4>
-              <button data-get-id="project-3" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/web-app-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">App Dashboard</h4>
-              <button data-get-id="project-4" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/api-gallery-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">API Gallery</h4>
-              <button data-get-id="project-5" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/site-optimize-full2.jpg" alt="" />
-              <h4 class="portfolio-subtitle">Site Optimization</h4>
-              <button data-get-id="project-6" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-           <h4 class="section-title portfolio-title">Flatiron Portfolio</h4>
-           <p class="section-intro">Portfolio Projects from the Flatiron School Full Stack Web Developer program which includes application design using Ruby, ORM, Sinatra, Rails, javaScript, React, Redux.
-          </p>
-
-          <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/icons/local-ski-report-logo.svg" alt="" />
-              <h4 class="portfolio-subtitle">Ruby Data Gem</h4>
-              <button data-get-id="project-7" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/hikeit-app-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">Rails App: HikeIt</h4>
-              <button data-get-id="project-8" class="btn btn-green">Learn More</button>
-            </div>
-          </div>
-
-           <div class="col">
-            <div class="portfolio-item">
-              <img src="assets/images/project-thumbs/calendar-app-full.jpg" alt="" />
-              <h4 class="portfolio-subtitle">Sinatra: Auction App</h4>
-              <button class="btn btn-green" data-get-id="project-9">Learn More</button>
-            </div>
-          </div>
-
-          <h4 class="section-title portfolio-title">Free Code Camp Portfolio</h4>
-          <p class="section-intro">Portfolio Projects from the Free Code Camp. These projects are built with CSS, HTML, JavaScript.
-         </p>
-
-
-         <div class="col">
-           <div class="portfolio-item">
-             <img src="assets/images/project-thumbs/tribute-full.jpg" alt="" />
-             <h4 class="portfolio-subtitle">Tribute Page</h4>
-             <button data-get-id="project-10" class="btn btn-green">Learn More</button>
-           </div>
-         </div>
-
-         <div class="col">
-           <div class="portfolio-item">
-             <img src="assets/images/project-thumbs/rquote-full.jpg" alt="" />
-             <h4 class="portfolio-subtitle">Random Quote</h4>
-             <button data-get-id="project-11" class="btn btn-green">Learn More</button>
-           </div>
-         </div>
-
-          <div class="col">
-           <div class="portfolio-item">
-             <img src="assets/images/project-thumbs/local-weather-full.jpg" alt="" />
-             <h4 class="portfolio-subtitle">Local Weather</h4>
-             <button class="btn btn-green" data-get-id="project-12">Learn More</button>
-           </div>
-         </div>
-
-
-        </div>
-        <!-- End/ of .inner-wrapper -->
-      </section>
-      <!-- End/ of #portfolio-section -->
-
-      <!-- CONTACT SECTION -->
-      <section id="contact-section">
-      <div class="inner-wrapper">
-       <img class="contact-icon" src="assets/images/icons/export-icon.svg" alt="" />
-        <h3 class="section-title contact-title">Contact</h3>
-
-       <p class="section-intro">If you're interested in chatting or want more information about what i've been working on, I'd love to hear from you!
-          </p>
-
-       <div class="contact-info" itemscope itemtype="http://schema.org/LocalBusiness">
-         <span itemprop="telephone">865-722-1024</span>
-         <a href="mailto:nickalan82@icloud.com"><span itemprop="email">nickalan82@icloud.com</span></a>
-       </div>
-
-       <div class="social-container">
-       <ul class="social-links">
-        <li class="social-items"><a href="https://github.com/Nick-Damico"><img src="assets/images/icons/github.svg" alt="" /></a></li>
-        <li class="social-items"><a href="https://twitter.com/NickAlan82"><img src="assets/images/icons/twitter.svg" alt="" /></a></li>
-        <li class="social-items"><a href="https://www.linkedin.com/in/nick-damico/"><img src="assets/images/icons/linkedin.svg" alt="" /></a></li>
-       </ul>
-       </div>
-
-
-        </div>
-        <!-- End/ of .inner-wrapper -->
-      </section>
-      <!-- End/ of #contact-section -->
-
-      <div id="modal">
-        <div class="modal-inner">
-        <div class="inner-wrapper group">
-          <div id="modal-content">
-
-            <h3 class="section-title">Project Title</h3>
-
-            <img class="modal-img" src="assets/images/modal-img/rwd-form-modal.jpg" alt="" />
-
-            <div class="modal-table">
-              <h4>Skills Used</h4>
-              <ul class="tech">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Repsonsive Design</li>
-              </ul>
-            </div>
-
-            <h4 class="modal-proj-title">Project Description</h4>
-            <p class="proj-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque molestie fringilla. Cras egestas lectus sed magna tristique tempor. Phasellus vel arcu eu neque rutrum vestibulum auctor quis felis. Nullam hendrerit urna nec efficitur suscipit. Maecenas vel nisl viverra, lacinia lorem at, pharetra dui. Integer erat mi, blandit in urna quis, suscipit condimentum dolor. Duis semper elit vel dui aliquam cursus.
-            </p>
-
-            <p class="proj-description">Phasellus nisl nisl, venenatis non convallis id, mollis at risus. In laoreet lacus quis risus lobortis, ut pretium erat aliquet.
-            </p>
-
-            <div class="btn-container">
-              <a class="btn btn-1of2-layout btn-green">View Live</a>
-              <a class="btn btn-2of2-layout btn-git">Github</a>
-            </div>
-            <img class="modal-close" src="assets/images/icons/close-icon.svg" alt="" />
           </div>
         </div>
-        </div>
-      </div>
 
 
-    <!-- SCRIPTS -->
-    <!-- <script src="assets/scripts/modal-dom.js"></script> -->
-    <script src="assets/scripts/app.js"></script>
+      <!-- SCRIPTS -->
+      <!-- <script src="assets/scripts/modal-dom.js"></script> -->
+      <script src="assets/scripts/app.js"></script>
 
-  </body>
-</html>
+    </body>
+  </html>
