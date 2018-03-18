@@ -85,6 +85,8 @@ gulp.task("clean", function () {
 
 gulp.task("build-css", ['minifyCss']);
 
+gulp.task("build-images", ['image']);
+
 gulp.task("build", ['minifyCss', 'minifyScripts', 'image']);
 
 gulp.task("dist", ['minifyCss', 'minifyScripts', 'image'], function () {
