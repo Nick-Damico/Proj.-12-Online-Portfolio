@@ -871,6 +871,12 @@ img {
         width: calc(33.3333333333% - 26.6666666667px);
         float: left;
         margin-left: 20px; } }
+  @media (min-width: 1024px) {
+    #portfolio-section .col--middle {
+      width: calc(33.3333333333% - 26.6666666667px);
+      float: left;
+      margin-left: 20px;
+      margin-left: calc(33.3333333333% - 26.6666666667px + 40px); } }
   #portfolio-section .portfolio-item {
     background: #288ada;
     padding: 1.25rem 1rem;
