@@ -532,7 +532,7 @@
 				// Can't be used with DOM elements in IE < 9
 				slice.call(document.documentElement);
 			} catch (e) { // Fails in IE < 9
-				// This will work for genuine arrays, array-like objects, 
+				// This will work for genuine arrays, array-like objects,
 				// NamedNodeMap (attributes, entities, notations),
 				// NodeList (e.g., getElementsByTagName), HTMLCollection (e.g., childNodes),
 				// and will not fail on other DOM objects (as do DOM elements in IE < 9)
@@ -2550,7 +2550,7 @@
 
 			/* Velocity's behavior is categorized into "actions": Elements can either be specially scrolled into view,
 			 or they can be started, stopped, paused, resumed, or reversed . If a literal or referenced properties map is passed in as Velocity's
-			 first argument, the associated action is "start". Alternatively, "scroll", "reverse", "pause", "resume" or "stop" can be passed in 
+			 first argument, the associated action is "start". Alternatively, "scroll", "reverse", "pause", "resume" or "stop" can be passed in
 			 instead of a properties map. */
 			var action;
 
@@ -2576,7 +2576,7 @@
 						pauseDelayOnElement(element, currentTime);
 					});
 
-					/* Pause and Resume are call-wide (not on a per element basis). Thus, calling pause or resume on a 
+					/* Pause and Resume are call-wide (not on a per element basis). Thus, calling pause or resume on a
 					 single element will cause any calls that containt tweens for that element to be paused/resumed
 					 as well. */
 
@@ -2633,7 +2633,7 @@
 						resumeDelayOnElement(element, currentTime);
 					});
 
-					/* Pause and Resume are call-wide (not on a per elemnt basis). Thus, calling pause or resume on a 
+					/* Pause and Resume are call-wide (not on a per elemnt basis). Thus, calling pause or resume on a
 					 single element will cause any calls that containt tweens for that element to be paused/resumed
 					 as well. */
 
@@ -5528,21 +5528,21 @@
 	///////////////////////////////////////////////////////////
 
 	//	Animates Navigation on 'click' of hamburger icon
-	function navDropDwn () {		
+	function navDropDwn () {
 		if(ul.style.display !== 'block'){
-			Velocity(ul, "slideDown", 800);	
+			Velocity(ul, "slideDown", 800);
 			navIcon.setAttribute("src", "assets/images/icons/nav-open.svg");
 		} else {
 			Velocity(ul, "slideUp", 800);
 			navIcon.setAttribute("src", "assets/images/icons/nav-closed.svg");
-		}	
+		}
 	}
 
 	//	FIXES NAVIGATION DISPLAY PROP VALUE BUG
 	//	CLICKING ON HAMBURGER NAV CAN CAUSE DISPLAY ISSUES ON BROWSER RESIZE
 	function correctNavDisplay() {
 		//	Get Current Viewport Width
-		var isWidth = browserWidth(); 
+		var isWidth = browserWidth();
 		//	Get ul.nav-icons display value
 		var display = ul.style.display;
 		//	This corrects display value for drop down navigation
@@ -5579,11 +5579,11 @@
 	}
 
 
-	
+
 	///////////////////////////////////////////////////////////
 	//	XMLHttpRequest Funtions
 	///////////////////////////////////////////////////////////
-	
+
 	//	AJAX Request for Portfolio Proj. HTML
 	function portfolioRequest(id) {
 		//	Create XMLHttpRequest object
@@ -5600,14 +5600,14 @@
 			//	Targets HTML div from response stores HTML
 			var el = doc.getElementById(id).innerHTML;
 			//	Appends HTML from request to Modal window
-			modalContent.innerHTML = el;	
-			addEventListenerList(closeBtn, "click", modalClose);		
+			modalContent.innerHTML = el;
+			addEventListenerList(closeBtn, "click", modalClose);
 		}
 		//	Send Prepared Request
 		xhr.send(null);
 	}
 
-	//	
+	//
 	function treehouseRequest() {
 		var xhr = new XMLHttpRequest();
 		//	Request Profile Info from Treehouse.com
@@ -5627,7 +5627,7 @@
 		var item = '';
 		var li = '';
 
-		for(var prop in obj) {				
+		for(var prop in obj) {
 			 if(prop !== 'total' && obj[prop] !== 0) {
 			 	item += '<li>';
 			 	item += prop + ' <i class="points">';
@@ -5650,7 +5650,6 @@
 	function modalOpen(e) {
 		//	Get id value from data-get-id attr on project btn
 		var id = this.getAttribute("data-get-id");
-		console.log(id);
 		//	AJAX GET Request function
 		portfolioRequest(id);
 		//	Add Velocity Animation
@@ -5682,7 +5681,7 @@
 
 	//	Attach EventListener to Proj Btns
 	addEventListenerList(projBtn, "click", modalOpen);
-	
+
 	//	Drop-down navigation 'hamburger' 'click' event
     navIcon.addEventListener("click", navDropDwn, false);
 
@@ -5697,7 +5696,7 @@
 		scroll(e);
 	});
 
-	
+
 	///////////////////////////////////////////////////////////
 	//	Function Calls
 	///////////////////////////////////////////////////////////
