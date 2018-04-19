@@ -17,7 +17,7 @@
        del = require('del'),
      image = require('gulp-image'),
   imagemin = require('gulp-imagemin'),
-  	prefix = require('gulp-autoprefixer'); 
+  	prefix = require('gulp-autoprefixer');
 
 
 gulp.task("concatScripts", function () {
@@ -40,7 +40,7 @@ gulp.task("minifyScripts",['concatScripts'], function () {
 });
 
 gulp.task("prefix", ["concatCSS"], function () {
-	return gulp.src(["dist/assets/css/app.css"])			   
+	return gulp.src(["dist/assets/css/app.css"])
 			   .pipe(prefix())
 			   .pipe(gulp.dest('dist/assets/css'));
 });
@@ -67,8 +67,8 @@ gulp.task("minifyCss", ["prefix"], function () {
 // 			   .pipe(imagemin({quality: 'low'}))
 // 			   .pipe(gulp.dest('images'));
 // });
-// //  http://picresize.com/b58a3800a3f27f 
- 
+// //  http://picresize.com/b58a3800a3f27f
+
 gulp.task('image', function () {
   gulp.src(['assets/images/*', 'assets/images/icons/*', 'assets/images/modal-img/*', 'assets/images/project-thumbs/*'], {base: "./"})
     .pipe(image({
@@ -82,6 +82,11 @@ gulp.task('image', function () {
 gulp.task("clean", function () {
 	del(['dist']);
 });
+
+gulp.task("build-css", ['minifyCss']);
+
+gulp.task("build-images", ['image']);
+
 gulp.task("build", ['minifyCss', 'minifyScripts', 'image']);
 
 gulp.task("dist", ['minifyCss', 'minifyScripts', 'image'], function () {

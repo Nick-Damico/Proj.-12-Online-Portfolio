@@ -8,41 +8,31 @@
   background-size: cover;
   border-top: .5rem solid $outer-space;
   height: 400px;
-  position: relative;  
+  position: relative;
   min-height: 90vh;
-
-  //////////////////////////
-  //  Depricated
-  //////////////////////////
-  
-  // @include tablet{
-  //   min-height: 550px;  
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-  // }
-
-  // @include lg-devices {
-  //   min-height: 700px;
-  // }
 
   @include wide-devices {
     min-height: 80vh;
   }
-  
+
 }
 
 .intro-header {
-  margin: -89px 0 0 -156px;
+  margin: -89px 0 0 -187px;
   position: absolute;
   top: 50%;
   left: 50%;
 
     @include xs-mobile {
-      margin-top: -35px;
+      margin: -89px 0 0 -160px;
     }
-  
+
+    @include sml-devices {
+      margin: -89px 0 0 -188px;
+    }
+
     @include tablet {
-      margin: -120px 0 0 -201px;
+      margin: -120px 0 0 -223px;
     }
 
   }
@@ -54,8 +44,7 @@
 
   .title-rule {
     display: block;
-    height: 50px;    
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
   }
-
